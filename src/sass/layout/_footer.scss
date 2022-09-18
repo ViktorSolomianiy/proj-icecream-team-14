@@ -1,7 +1,18 @@
 .footer {
     background-color: #84A178;
     padding-top: 90px;
+    margin-left: 0;
+    margin-right: 0;
     
+    
+    &__container {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+
 
     // &__locations__btn {
     //     display: flex;
@@ -43,43 +54,152 @@
         
     // }
 
-    &__title {
-        @include font(700, 18, 1.22, 0.03);
-        // text-transform: uppercase;
-        color: #FCFCFC;
+    &__name {
+        max-width: 238px;
+        margin-bottom: 16px;
+        
+        @include tablet {
+            margin-bottom: 9px;
+            max-width: 352px;
+        }
     }
 
+    &__title {
+        @include font(700, 18, 1.22, 0.02);
+        color: #FCFCFC;
+        
+        @include tablet {
+            @include font(700, 26, 1.23, 0.04);
+        }
+    }
+
+    &__name2 {
+        max-width: 200px;
+        
+        @include tablet {
+            margin-bottom: 32px;
+            max-width: 340px;
+        }
+    }
+    
     &__title2 {
         @include font(700, 34, 1.2, 0.04);
-        // text-transform: uppercase;
-        color: #FCFCFC;
+            color: #FCFCFC;
+
+        @include tablet {
+            @include font(700, 48, 1.22, 0.06);
+        }
     }
 
     &__contact{
         display: flex;
         justify-content: right;
         align-items: end;
-
+        margin-top: 38px;
         margin-bottom: 40px;
+
+        @include tablet {
+            margin-bottom: 56px;
+        }
     }
 
     &__invite {
+        margin-right: 5px;
         @include font(700, 12, 1.23, 0.03);
-        color: #131313;
+            color: #131313;
+
+        @include tablet{
+            @include font(700, 14, 1.86, 0.03);
+        }
     }
 
     &__tel {
         @include font(700, 12, 1.23, 0.03);
-        color: #FCFCFC;
+            color: #FCFCFC;
+        
+        @include tablet{
+            @include font(700, 14, 1.86, 0.03);
+        }
+    }
+
+    &__line {
+        height: 1px; 
+        background-color: #E1E1E1;
+        margin-bottom: 16px;
+        
+        @include tablet {
+            margin-bottom: 14px;
+        }
+
     }
 
     &__copyright {
-        padding-top: 16px;
         padding-bottom: 62px;
-        border-top: 1px solid #E1E1E1;
         
         @include font(700, 14, 1.5, 0.03);
-        text-align: center;
-        color: #7A7A7A
+            text-align: center;
+            color: #7A7A7A;
+
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 13px;
+
+            @include font(700, 14, 1.9, 0.02);
+        }
+        
+        &__tm {
+            max-width: 160px;
+            display: inline-block;
+            
+            @include tablet {
+                max-width: 298px;
+            }
+        }
     }
 }
+
+.social {
+    display: flex;
+    justify-content: right;
+    gap: 28px;
+    margin-top: 42px;
+    @include tablet {
+        gap: 30px;
+    }
+
+  
+    &__link {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:#F8D24E;
+  
+      &:hover{
+        width: 32px;
+        height: 32px;
+      }
+
+      &:focus {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    &__icon {
+      display: block;
+      fill: #84A178;
+    
+      .social__link:hover & {
+        fill: #ffffff;
+      }
+
+      .social__link:focus & {
+        fill: #ffffff;
+      }
+    }
+  }
+  
