@@ -3,17 +3,56 @@
     padding-top: 90px;
     margin-left: 0;
     margin-right: 0;
+
     
+
+    // &__locations__btn {
+    //     display: flex;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     // gap: 16px;
+    //     padding: 12px 34px;
+    //     margin-bottom: 16px;
+    
+    //     @include font(600, 14, 1.29, 0.03);
+        
+    //     align-items: center;
+    //     text-align: center;
+    //     color: #131313;
+
+    //     background: #F8D24E;
+    //     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    //     border-radius: 10px;
+        
+    // }
+
+    // &__franchise__btn {
+    //     display: flex;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     // gap: 16px;
+    //     padding: 12px 46px;
+    //     margin-bottom: 39px;
+    
+    //     @include font(600, 14, 1.29, 0.03);
+        
+    //     align-items: center;
+    //     text-align: center;
+    //     color: #131313;
+
+    //     background-color: transparent;
+    //     border: 2px solid #F8D24E;
+    //     border-radius: 10px;
+        
+    // }
     
     &__container {
-        @include largerThanMobile{
+        @include largerThanMobile {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
         }
     }
-
-
    
     &__name {
         max-width: 238px;
@@ -69,7 +108,7 @@
         }
     }
 
-    &__contact{
+    &__contact {
         display: flex;
         justify-content: right;
         align-items: end;
@@ -86,10 +125,15 @@
         @include font(700, 12, 1.23, 0.03);
             color: #131313;
 
+        
         @include tablet{
             @include font(700, 14, 1.86, 0.03);
         }
-    }
+        
+        @include desktop {
+            @include font(700, 15, 1.86, 0.02);
+        }
+    }    
 
     &__tel {
         @include font(700, 12, 1.23, 0.03);
@@ -98,48 +142,39 @@
         @include tablet{
             @include font(700, 14, 1.86, 0.03);
         }
-    }
 
-    &__line {
-        height: 1px; 
-        background-color: #E1E1E1;
-        margin-bottom: 16px;
-        
-        @include tablet {
-            margin-bottom: 14px;
-        }
-        
         @include desktop {
-            width: 1167px;
-            margin-bottom: 12px;
-            margin-left: auto;
-            margin-right: auto;   
+            @include font(700, 15, 1.86, 0.02);
         }
-
     }
+
 
     &__copyright {
+        padding-top: 16px;
         padding-bottom: 62px;
+        border-top: 1px solid #E1E1E1;
         
         @include font(700, 14, 1.5, 0.03);
-            text-align: center;
-            color: #7A7A7A;
+            
+        text-align: center;
+        color: #7A7A7A;
 
         @include tablet {
+            padding-top: 14px;
+            padding-bottom: 14px;
             display: flex;
             justify-content: center;
-            padding-bottom: 13px;
 
             @include font(700, 14, 1.9, 0.02);
         }
         
-        &__tm {
-            max-width: 160px;
-            display: inline-block;
+        @include desktop {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 12px;
+            padding-top: 12px;
             
-            @include tablet {
-                max-width: 298px;
-            }
+            @include font(700, 12, 1.9, 0.02);
         }
     }
 }
@@ -149,11 +184,11 @@
     justify-content: right;
     gap: 28px;
     margin-top: 42px;
+    
     @include tablet {
         gap: 30px;
     }
 
-  
     &__link {
       width: 34px;
       height: 34px;
@@ -185,45 +220,5 @@
       .social__link:focus & {
         fill: #ffffff;
       }
-    }
-  }
-  
-   // &__locations__btn {
-    //     display: flex;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     // gap: 16px;
-    //     padding: 12px 34px;
-    //     margin-bottom: 16px;
-    
-    //     @include font(600, 14, 1.29, 0.03);
-        
-    //     align-items: center;
-    //     text-align: center;
-    //     color: #131313;
-
-    //     background: #F8D24E;
-    //     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    //     border-radius: 10px;
-        
-    // }
-
-    // &__franchise__btn {
-    //     display: flex;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     // gap: 16px;
-    //     padding: 12px 46px;
-    //     margin-bottom: 39px;
-    
-    //     @include font(600, 14, 1.29, 0.03);
-        
-    //     align-items: center;
-    //     text-align: center;
-    //     color: #131313;
-
-    //     background-color: transparent;
-    //     border: 2px solid #F8D24E;
-    //     border-radius: 10px;
-        
-    // }
+    } 
+ }
