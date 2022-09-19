@@ -1,83 +1,8 @@
-.abaut{
-    background-color: #84A178;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    &__title{
-        @include font(400, 30px, 1.26, 0.04em);
-        font-family: 'Seymour One';
-        font-style: normal;
-        text-align: center;
-        margin: 0 auto;
-        text-transform: uppercase;
-        color: #FCFCFC;
-        width: 200px;
-        }
-    &__foto{
-        margin-top: 32px;
-        text-align: center;
-        // position: relative
-        }
-    &__img{
-        width: 278px;
-        height: 278px;
-        background-color: transparent;
-        // position: absolute;
-        }
-        &__text{
-            margin-top: 40px;
-            margin-bottom: 20px;
-            text-align: center;
-            display: block;
-        }
-        &__list{
-            margin-bottom: 4px;
-            margin-left: 50px;
-            margin-right: 50px;
-            text-align: center;
-        }
-        &__item{
-        @include font(400, 12px, 176%, 0.04em);
-        color: #FCFCFC;
-        }
-        &__btn{
-            @include font(600, 14px, 1.88, .06em);
-            width: 164px;
-            height: 42px;
-            padding: 12px 34px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            border-radius: 10px;
-            background-color: #F8D24E;
-            &:hover,
-            &:focus {
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                cursor: pointer;
-                }
-            }
-}
-
-.abaut__btn__icon{
-    margin-left: 4px;
-}
-
-.abaut-pre__title{
-    @include font(700, 30px, 1.23, 0.04em);
-    font-style: normal;
-    color: #FCFCFC;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-                      // --------------modal---------------
+               // ---------------modal-------------
+// visually-hidden
 
     .abaut__modal{
+    width: 100%;
     max-width: 280px;
     min-height: 459px;
     padding: 28px;
@@ -85,10 +10,36 @@
     background-color: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--cubic);
+    .backdrop.visually-hidden & { 
+    transform: translate(-50%, -50%) scale(0);
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 568px;
+        min-height: 449px;
+        padding: 32px 60px;
+        }
+}
+
+.modal__btn{
+    position: absolute;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    right: 8px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    @media screen and (min-width: 1200px){
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .icon__cloused{
@@ -96,27 +47,57 @@
     margin-left: auto;
     margin-right: auto;
     fill:#131313;
+    @media screen and (min-width: 1200px){
+    }
+}
+.abaut__modal__title{
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 0.7;
+        margin-bottom: 32px;
+    }
 }
 
-
-
-
-
-
-
 thumb-wrap {
-    // position: relative;
-    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
     height: 0;
     overflow: hidden;
+    padding-bottom: 0; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    // 56.25%
 }
 
 .thumb-wrap iframe {
-    // position: absolute;
-    top: 0;
-    left: 0;
+    margin: 0 auto;
     width: 224px;
     height: 199px;
+    border-radius: 10px;
     border-width: 0;
     outline-width: 0;
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 205px;
+    }
+}
+
+.abaut-modal__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+    margin-top: 20px;
+    display: block;
+    @media screen and (min-width: 1200px){
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 1.37;
+        margin-top: 32px;
+    }
 }
