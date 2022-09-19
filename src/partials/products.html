@@ -3,12 +3,12 @@
         <h1 class="container__title"><span class="product__accent">100% natural</span> products</h1>
         <ul class="products__list list">
             <li class="products__item">
-                <img 
-                    src="./images/products/ice-cream-1x-min.jpeg" 
-                    width="200px" 
-                    height="200px" 
-                    alt="ice-crema"
-                    class="products__img">
+                <picture>
+                    <source srcset="./images/products/ice-cre-des-1x-min.jpeg 1x,
+                    ./images/products/ice-cre-des-2x-min.jpeg 2x" media="(min-width:1200px)">
+                    <img src="./images/products/ice-cream-1x-min.jpeg" width="200px" height="200px" alt="ice-crema" class="products__img">
+                </picture>
+                
                 <img 
                     src="./images/products/eclipse-ic.svg" 
                     width="200px" 
