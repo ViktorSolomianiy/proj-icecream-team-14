@@ -1,6 +1,12 @@
 .products {
   position: relative;
-  background-image: url(/src/images/products/ice-crema-bg1x-min.jpeg);
+  background-image: url(/src/images/products/bacgraund_1x-min.jpeg);
+  background-position: 35%, 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include retina{
+    background-image: url(/src/images/products/ice-crema-bg2x-min.jpeg);
+  }
   background-color: rgb(188, 226, 226);
 
   @include mobile {
