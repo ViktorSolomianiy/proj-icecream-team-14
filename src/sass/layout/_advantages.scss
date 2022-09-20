@@ -13,7 +13,8 @@
     }
 
     @include desktop {
-        
+        width: 463px;
+        margin-left: 100px;
     }
 }
 
@@ -31,6 +32,12 @@
 
     @include tablet {
         text-align: left;
+        width: 357px;
+    }
+
+    @include desktop {
+        text-align: left;
+        width: 341px;
     }
 
 }
@@ -41,6 +48,12 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .image {
@@ -50,32 +63,36 @@
         margin-bottom: 48px;
     }
 
-    & {
-        border-radius: 50%;
-        display: inline-block;
-        max-width: 100%;
-        position: relative;
-        z-index: 2;
-        top: 20px;
+    @include desktop {
+        margin-bottom: 60px;
     }
+
+    // & {
+    //     border-radius: 50%;
+    //     display: inline-block;
+    //     max-width: 100%;
+    //     position: relative;
+    //     z-index: 2;
+    //     top: 20px;
+    // }
 }
 
-.advantages__circle {
-    width: 278px;
-    height: 278px;
-    position: relative;
+// .advantages__circle {
+//     width: 278px;
+//     height: 278px;
+//     position: relative;
 
-    &::before {
-        content: '';
-        background-color: #F8D24E;
-        border-radius: 50%;
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-    }
-}
+//     &::before {
+//         content: '';
+//         background-color: #F8D24E;
+//         border-radius: 50%;
+//         display: block;
+//         height: 100%;
+//         width: 100%;
+//         position: absolute;
+//         z-index: 1;
+//     }
+// }
 
 
 
@@ -93,7 +110,8 @@
     color: #FCFCFC;
 }
 
-.title {
+.title {    
+    
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
@@ -102,10 +120,11 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
+    
     padding-bottom: 32px;
 
     color: #FCFCFC;
+    
 }
 
 .btn {
@@ -159,12 +178,20 @@
         @include flex;
         margin-bottom: 32px;
     }
+
+    @include desktop {
+        margin-bottom: 40px;
+    }
 }
 
 .btn-flex {
     @include flex;
 
     @include tablet {
+        justify-content: flex-start;
+    }
+
+    @include desktop {
         justify-content: flex-start;
     }
 }
@@ -224,7 +251,7 @@
     color: #FCFCFC;
 
     @include tablet {
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -232,7 +259,11 @@
     list-style: none;
 
     @include tablet {
-        @include flex
+        @include flex;
+    }
+
+    @include desktop {
+        display: flex;
     }
 }
 
@@ -243,6 +274,12 @@
 
     @include desktop {
         margin-right: 32px;
+    }
+
+    &:last-child {
+        @include desktop {
+            margin-right: 0;
+        }
     }
 
     &:last-child {
