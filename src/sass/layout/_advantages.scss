@@ -3,7 +3,14 @@
   padding-top: 60px;
   padding-bottom: 180px;
 }
-
+.advantages__flex {
+  @media screen and (max-width: 767px) {
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .text__list {
   padding-top: 40px;
 
@@ -120,6 +127,9 @@
   padding-bottom: 32px;
 
   color: #fcfcfc;
+  @media screen and (max-width: 767px) {
+    width: 200px;
+  }
 }
 
 .btn {
