@@ -1,4 +1,6 @@
-
+.products {
+  position: relative;
+  background-color: rgb(188, 226, 226);
 
 .products{
     background-image: url(/src/images/products/ice-crema-bg1x-min.jpeg);
@@ -11,222 +13,236 @@
         align-items: center;
         justify-content: center;
     }
+
 }
 
-.products__container{
-    padding: 60px 20px;
-    @include tablet {
-        padding: 60px 20px 82px;
-    }
-    @include desktop {
-        padding: 60px 12px 57px;
-    }
+.products__container {
+  padding: 60px 20px;
+  @include tablet {
+    padding: 60px 20px 82px;
+  }
+  @include desktop {
+    padding: 60px 12px 57px;
+  }
 }
 
 .container__title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-size: 30px;
-    line-height: 1.27;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.27;
 
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: #131313;
+  color: #131313;
 
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    @include tablet {
-        font-size: 34px;
-        line-height: 1.26;
+  @include tablet {
+    font-size: 34px;
+    line-height: 1.26;
 
-        margin-bottom: 80px;
-    }
+    margin-bottom: 80px;
+  }
 
-    @include desktop {
-        font-size: 36px;
-        line-height: 1.25;
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.25;
 
-        letter-spacing: 0.06em;
-        margin-bottom: 120px;
-    }
+    letter-spacing: 0.06em;
+    margin-bottom: 120px;
+  }
 }
 
-.product__accent{
-    font-family: 'Montserrat';
-    font-style: normal;
+.product__accent {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #131313;
+
+  @include tablet {
     font-weight: 800;
-    font-size: 18px;
-    line-height: 1.22;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #131313;
-
-    @include tablet {
-        font-weight: 800;
-        font-size: 22px;
-        line-height:1.23;
-    }
-   @include desktop {
-        font-size: 30px;
-        line-height: 1.23;
-   }
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .products__list {
-    display: flex;
-    gap: 56px;
-    flex-wrap: wrap;
-    justify-content: center;
-    @include tablet {
-        gap: 16px;
-    }
-    @include desktop {
-        gap: 32px;
-    }
-
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include tablet {
+    gap: 16px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
 }
-.products__item{
-    position: relative;
-    padding-top: 108px;
-    text-align: center;
+.products__item {
+  position: relative;
+  padding-top: 108px;
+  text-align: center;
 
-    @include mobile {
-            max-width: 370px;
-        }
-    
-    @include tablet {
-        max-width: 224px;
-    }
-    @include desktop {
-        max-width: 370px;
-    }
+  @include mobile {
+    max-width: 370px;
+  }
 
+  @include tablet {
+    max-width: 224px;
+  }
+  @include desktop {
+    max-width: 370px;
+  }
 }
 
 .ice-cream {
-    background: #AEC6A5;
+  background: #aec6a5;
 }
 
 .ice-coffee {
-    background: #EFD478;
+  background: #efd478;
 }
 
 .milkshakes {
-    background: #D6936D;
+  background: #d6936d;
 }
 .product__content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 123px 40px 20px;
-    border-radius: 24px;
-    min-height: 480px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 123px 40px 20px;
+  border-radius: 24px;
+  min-height: 480px;
 
-    @include tablet {
-        padding: 108px 20px 20px;
-        min-height: 428px;
-    }
-    @include desktop {
-        padding: 166px 64px 60px;
-        min-height: 535px;
-    }
+  @include tablet {
+    padding: 108px 20px 20px;
+    min-height: 428px;
+  }
+  @include desktop {
+    padding: 166px 64px 60px;
+    min-height: 535px;
+  }
 }
 
 .products__img {
-    z-index: 2;
-    position: absolute;
-    top: -108px;
-    left: 50%;
-    transform: translate(-50%, 108px);
-    border-radius: 101.5px;
+  z-index: 2;
+  position: absolute;
+  top: -108px;
+  left: 50%;
+  transform: translate(-50%, 108px);
+  border-radius: 101.5px;
 
-    @include desktop {
-        top: -183px;
+  @include desktop {
+    top: -183px;
 
-        width: 300px;
-        height: 300px;
-        border-radius: 150px;
-    }
-   
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+  }
 }
 
 .products__img-bg {
-    z-index: 1;
-    position: absolute;
-    top: -96px;
-    left: 50%;
-    transform: translate(-50%, 108px);
-    border-radius: 101.5px;
-    border-color: #131313;
+  z-index: 1;
+  position: absolute;
+  top: -96px;
+  left: 50%;
+  transform: translate(-50%, 108px);
+  border-radius: 101.5px;
+  border-color: #131313;
 
-    @include desktop {
-        top: -166px;
+  @include desktop {
+    top: -166px;
 
-        width: 300px;
-        height: 300px;
-        border-radius: 150px;
-    }
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+  }
 }
 
-.ice-cre{
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+.ice-cre {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
-.ice-co{
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+.ice-co {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
-.mil{
-    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+.mil {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
 .products__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: #131313;
+  color: #131313;
 
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    @include tablet {
-        font-size: 22px;
-        line-height: 1.23;    
-    }
-    @include desktop {
-        font-size: 30px;
-        line-height: 1.23;
-    }
+  @include tablet {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .products__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 176%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
 
-    text-align: center;
-    letter-spacing: 0.04em;
+  text-align: center;
+  letter-spacing: 0.04em;
 
-    color: #131313;
-    @include desktop {
-        font-size: 16px;
-    }
+  color: #131313;
+  @include desktop {
+    font-size: 16px;
+  }
 }
 
 .products__btn {
+
     height: 20px; 
     
     // &:hover .hov{
@@ -256,52 +272,54 @@
 .foc, .hov {
    display: none;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 //  MODAL FORM
 
-.modal-pro{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
+.modal-pro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    opacity: 1;
+  opacity: 1;
 
-    z-index: 6;
-    width: 280px;
-    height: 990px;
+  z-index: 6;
+  width: 280px;
+  height: 990px;
 
-    padding: 28px 20px 32px;
+  padding: 28px 20px 32px;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
 
-    @include tablet {
-        width: 568px;
-        height: 995px;
+  @include tablet {
+    width: 568px;
+    height: 995px;
 
-        padding: 32px 40px;
-    }
-    @include desktop {
-        width: 568px;
-        height: 995px;
+    padding: 32px 40px;
+  }
+  @include desktop {
+    width: 568px;
+    height: 995px;
 
-        padding: 32px 40px;
-    }
+    padding: 32px 40px;
+  }
 }
 
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-pro__btn-close {
+
     position: absolute;
     top: 28px;
     right: 20px;
@@ -412,99 +430,98 @@
 }
 .ingredients{
     text-align: center;
+
 }
 .ingredients__title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.4;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 .ingredients__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 11px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 176%;
-    letter-spacing: 0.04em;
-    
-    margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 48px;
 }
 .ingredients__item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.modal-pro-input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal-pro-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.input__form{
-    width: 100%;
-    height: 42px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    padding: 11px;
+.input__form {
+  width: 100%;
+  height: 42px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding: 11px;
 
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 
-    @include tablet {
-        min-width: 368px;
-    }
-    @include desktop {
-        width: 368px;
-    }
+  @include tablet {
+    min-width: 368px;
+  }
+  @include desktop {
+    width: 368px;
+  }
 }
-.coment{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.coment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    @include tablet {
-        width: 368px;
-    }
-    @include desktop {
-        width: 368px;
-    }
+  @include tablet {
+    width: 368px;
+  }
+  @include desktop {
+    width: 368px;
+  }
 }
 
 .coment__input {
-    width: 100%;
-    height: 84px;
-    padding: 11px;
+  width: 100%;
+  height: 84px;
+  padding: 11px;
 
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    
-    resize: none;
-    
-    margin-bottom: 24px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
 
+  resize: none;
+
+  margin-bottom: 24px;
 }
-.input__btn{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
+.input__btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
 
-    min-width: 132px;
-    height: 42px;
+  min-width: 132px;
+  height: 42px;
 
-    background: #F8D24E;
-    border-radius: 10px;
-    &:hover {
-        background: #0A8817;;
-    }
-    &:focus {
-        color: #ffffff;
-        border: 2px solid #0A8817;
-    }
-    &:disabled {
-        background-color: #ABABAB;
-    }
+  background: #f8d24e;
+  border-radius: 10px;
+  &:hover {
+    background: #0a8817;
+  }
+  &:focus {
+    color: #ffffff;
+    border: 2px solid #0a8817;
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
 }
-
