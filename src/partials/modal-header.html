@@ -1,7 +1,7 @@
-<!-- <div class="backdroped">
+<div class="backdroped is-hidden no-scroll" data-modal-header>
   <div class="header-modal">
     <div>
-      <button type="button" class="header-modal__close">
+      <button type="button" class="header-modal__close" data-modal-close-head>
         <svg class="header-modal__svg" width="16" heigth="16">
           <use href="./images/icons.svg#icon-close-line-header-modal"></use>
         </svg>
@@ -11,7 +11,16 @@
     <ul class="header-modal__product">
       <li class="header-modal__list list">
         <div class="header-modal__ice-cream">
-          <p class="header-modal__text">ice cream</p>
+          <input
+            type="radio"
+            name="view"
+            id="ice-cream"
+            class="header-modal__icecream-input is-hidden"
+            checked="checked"
+          />
+          <label for="ice-cream" class="header-modal__text-icecream"
+            >ice cream</label
+          >
         </div>
         <div class="header-modal__ball-icecream"></div>
         <picture class="header-modal__img-icecream">
@@ -46,7 +55,16 @@
       </li>
       <li class="header-modal__list list">
         <div class="header-modal__ice-coffee">
-          <p class="header-modal__text">ice coffee</p>
+          <input
+            type="radio"
+            name="view"
+            id="ice-coffee"
+            class="header-modal__icecoffee-input is-hidden"
+            checked="checked"
+          />
+          <label for="ice-coffee" class="header-modal__text-icecoffee"
+            >ice coffee</label
+          >
         </div>
         <div class="header-modal__ball-icecoffee"></div>
         <picture class="header-modal__img-icecoffee">
@@ -80,8 +98,17 @@
         </picture>
       </li>
       <li class="header-modal__list list">
-        <div class="header-modal__text">
-          <p class="header-modal__milkshake">milkshake</p>
+        <div class="header-modal__milkshake">
+          <input
+            type="radio"
+            name="view"
+            id="milkshake"
+            class="header-modal__milkshake-input is-hidden"
+            checked="checked"
+          />
+          <label for="milkshake" class="header-modal__text-milkshake"
+            >milkshake</label
+          >
         </div>
         <div class="header-modal__ball-milkshake"></div>
         <picture class="header-modal__img-milkshake">
@@ -116,8 +143,20 @@
       </li>
     </ul>
     <form class="header-modal__form">
-      <input type="name" class="header-modal__input" placeholder="Name" />
-      <input type="phone" class="header-modal__input" placeholder="Phone" />
+      <input
+        type="name"
+        class="header-modal__input"
+        placeholder="Name"
+        required
+        pattern="[a-z]{1,40}"
+      />
+      <input
+        type="tel"
+        class="header-modal__input"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{1,13}"
+      />
       <textarea
         name=""
         id=""
@@ -129,4 +168,4 @@
       <button type="submit" class="header-modal__btn">Submit</button>
     </form>
   </div>
-</div> -->
+</div>
