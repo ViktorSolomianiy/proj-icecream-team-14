@@ -1,7 +1,8 @@
 
+
 .products{
-    background-image: url(../images/products/ice-crema-bg1x-min.jpeg);
     position: relative;
+
     background-color: rgb(188, 226, 226);
 
     @include mobile {
@@ -225,12 +226,29 @@
 }
 
 .products__btn {
-    height: 20px;
+    height: 20px; 
+    
+    &:hover .hov{
+        display: block;
+    }
+    &:focus .foc {
+        display: block;
+    }
+    &:hover .def,
+    &:focus .def {
+        display: none;
+    }
+    
 }
-.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+
+
+.foc, .hov {
+   display: none;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+//  MODAL FORM
 
 .modal-pro{
     position: fixed;
@@ -240,7 +258,7 @@
 
     opacity: 1;
 
-    z-index: 3;
+    z-index: 6;
     width: 280px;
     height: 990px;
 
@@ -250,13 +268,39 @@
 
     border: 2px solid #F8D24E;
     border-radius: 10px;
+
+    @include tablet {
+        width: 568px;
+        height: 995px;
+
+        padding: 32px 40px;
+    }
+    @include desktop {
+        width: 568px;
+        height: 995px;
+
+        padding: 32px 40px;
+    }
 }
 
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-pro__btn-close {
     position: absolute;
     top: 28px;
     right: 20px;
+    
+    @include tablet {
+        top: 20px;
+    }
+    @include desktop {
+        top: 20px;
+    }
 }
 
 .modal-pro__title{
@@ -271,20 +315,54 @@
     color: #131313;
 
     margin-bottom: 22px;
+
+    @include tablet{
+        max-width: 273px;
+    }
+    @include desktop {
+        max-width: 273px;
+    }
 }
 .modal-pro__view{
    margin-bottom: 39px;
 
 }
-.modal-pro__img{
-    margin-right: auto;
-    margin-left: auto;
+.modal-pro__container{
+    position: relative;
     margin-bottom: 31px;
 }
+
+.modal-pro__img{
+    position: relative;
+    left: 50%;
+    top: 0;
+    border-radius: 100px;
+    transform: translate(-50%, 0);
+}
+.modal-pro__img-bg{
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 131px;
+    height: 131px;
+    border-radius: 100px;
+    transform: translate(-50%, 0);
+
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
 .benefiit__list{
     display: flex;
     justify-content: center;
     gap: 9px;
+
+    @include tablet{
+        gap: 20px;
+    }
+    @include desktop {
+        gap: 20px;
+    }
 }
 .benefit__item{
     display: flex;
@@ -313,21 +391,7 @@
     border: 2px solid #9CBE8F;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
-// .benefit__circle{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
 
-//     width: 43px;
-//     height: 43px;
-//     font-weight: 500;
-//     font-size: 10px;
-//     line-height: 2.8;
-
-//     background: #9CBE8F;
-//     border: 2px solid #9CBE8F;
-//     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-// }
 .benefit__circle{
     font-weight: 500;
     font-size: 10px;
@@ -339,11 +403,14 @@
 .ingredients__title {
     font-weight: 500;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
 
     margin-bottom: 24px;
 }
 .ingredients__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
     font-weight: 400;
     font-size: 14px;
     line-height: 176%;
@@ -354,8 +421,14 @@
 .ingredients__item {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
+.modal-pro-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .input__form{
     width: 100%;
     height: 42px;
@@ -365,7 +438,27 @@
     padding: 11px;
 
     margin-bottom: 16px;
+
+    @include tablet {
+        min-width: 368px;
+    }
+    @include desktop {
+        width: 368px;
+    }
 }
+.coment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet {
+        width: 368px;
+    }
+    @include desktop {
+        width: 368px;
+    }
+}
+
 .coment__input {
     width: 100%;
     height: 84px;
@@ -378,15 +471,27 @@
     resize: none;
     
     margin-bottom: 24px;
+
 }
 .input__btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
 
-    width: 114px;
+    min-width: 132px;
     height: 42px;
 
     background: #F8D24E;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    &:hover {
+        background: #0A8817;;
+    }
+    &:focus {
+        color: #ffffff;
+        border: 2px solid #0A8817;
+    }
+    &:disabled {
+        background-color: #ABABAB;
+    }
 }
 
