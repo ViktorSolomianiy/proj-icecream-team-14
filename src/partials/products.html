@@ -1,15 +1,31 @@
 <!-- PRODUCTS -->
 <section class="products">
     <div class="products__container">
-        <h1 class="container__title" id="toproducts"><span class="product__accent">100% natural</span> products</h1>
+        <h1 class="container__title"><span class="product__accent">100% natural</span> products</h1>
         <ul class="products__list list">
             <li class="products__item">
-                <img 
-                    src="./images/products/ice-cream-1x-min.jpeg" 
-                    width="200px" 
-                    height="200px" 
-                    alt="ice-crema"
-                    class="products__img">
+                <picture>
+                    <source 
+                        srcset="
+                            ./images/products/ice-cre-des-1x-min.jpeg 1x,
+                            ./images/products/ice-cre-des-2x-min.jpeg 2x"
+                        media="(max-width:1200px)"
+                    >
+                    <source 
+                        srcset="
+                            ./images/products/ice-cream-1x-min.jpeg 1x,
+                            ./images/products/ice-crema-2x-min.jpeg 2x"
+                        media="(min-width:1199px)"
+                    >
+                    <img 
+                        src="./images/products/ice-cream-1x-min.jpeg" 
+                        width="200px" 
+                        height="200px" 
+                        alt="ice-crema" 
+                        class="products__img"
+                    >
+                </picture>
+                
                 <img 
                     src="./images/products/eclipse-ic.svg" 
                     width="200px" 
@@ -28,23 +44,39 @@
                         <svg class="products__arrow def" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow1"></use>
                         </svg>
-                        <svg class="products__arrow hov" width="40px" height="">
+                        <!-- <svg class="products__arrow hov" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow2"></use>
                         </svg>
                         <svg class="products__arrow foc" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow3"></use>
-                        </svg>
+                        </svg> -->
                     </button>
                 </div>
                 
             </li>
             <li class="products__item">
-                <img 
-                    src="./images/products/ice-coffee-1x-min.jpeg" 
-                    width="200px" 
-                    height="200px" 
-                    alt="ice-coffee"
-                    class="products__img">
+                <picture>
+                    <source 
+                        srcset="
+                            ./images/products/ice-co-des-1x-min.jpeg 1x,
+                            ./images/products/ice-co-des-2x-min.jpeg 2x"
+                        media="(max-width:1200px)"
+                    >
+                    <source 
+                        srcset="
+                            ./images/products/ice-coffee-1x-min.jpeg 1x,
+                            ./images/products/ice-coffee-2x-min.jpeg 2x"
+                        media="(min-width:1199px)"
+                    >
+                    <img 
+                        src="./images/products/ice-coffee-1x-min.jpeg" 
+                        width="200px" 
+                        height="200px" 
+                        alt="ice-coffee" 
+                        class="products__img"
+                    >
+                </picture>
+                
                 <img 
                     src="./images/products/ellipse-ic-co.svg" 
                     width="200px" 
@@ -60,28 +92,43 @@
                             preservatives and flavor enhancers</p>
                     </div>
                     
-                    <button class="products__btn btn" data-prod-open>
+                    <button class="products__btn btn" data-prod-opens>
                         <svg class="products__arrow def" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow1"></use>
                         </svg>
-                        <svg class="products__arrow hov" width="40px" height="">
+                        <!-- <svg class="products__arrow hov" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow2"></use>
                         </svg>
                         <svg class="products__arrow foc" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow3"></use>
-                        </svg>
+                        </svg> -->
                     </button>
                 </div>
                 
             </li>
             <li class="products__item">
-                <img 
-                    src="./images/products/milkshakes-1x-min.jpeg" 
-                    width="200px" 
-                    height="200px" 
-                    alt="milkshakes"
-                    class="products__img"
-                >
+                <picture>
+                    <source 
+                        srcset="
+                            ./images/products/milksh-des-1x-min.jpeg 1x,
+                            ./images/products/milksh-des-2x-min.jpeg 2x"
+                        media="(max-width:1200px)"
+                    >
+                    <source 
+                        srcset="
+                            ./images/products/milkshakes-1x-min.jpeg 1x,
+                            ./images/products/milkshakes-2x-min.jpeg 2x"
+                        media="(min-width:1199px"
+                    >
+                    <img 
+                        src="./images/products/milkshakes-1x-min.jpeg" 
+                        width="200px" 
+                        height="200px" 
+                        alt="milkshakes" 
+                        class="products__img"
+                    >
+                </picture>
+                
                 <img 
                     src="./images/products/ellipse-mil.svg" 
                     width="200px" 
@@ -97,16 +144,16 @@
                             and other sweets of your choice</p>
                     </div>
                     
-                    <button class="products__btn btn" data-prod-open>
+                    <button class="products__btn btn" data-prod-openss>
                         <svg class="products__arrow def" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow1"></use>
                         </svg>
-                        <svg class="products__arrow hov" width="40px" height="">
+                        <!-- <svg class="products__arrow hov" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow2"></use>
                         </svg>
                         <svg class="products__arrow foc" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow3"></use>
-                        </svg>
+                        </svg> -->
                     </button>
                 </div>
                 
@@ -122,11 +169,21 @@
         <h2 class="modal-pro__title">Chololate icecream</h2>
         <div class="modal-pro__view">
             <div class="modal-pro__container">
+                <picture>
+                    <source 
+                        srcset="
+                            ./images/products/modal-img-mob-1x-min.jpeg 1x,
+                            ./images/products/modal-img-mob-2x-min.jpeg 2x"
+                        media="(min-width:1900px)"
+                    >
                 <img 
                     src="./images/products/modal-img-mob-1x-min.jpeg" 
                     alt="ice cream" 
                     class="modal-pro__img"
                 >
+
+                </picture>
+
                 <img 
                 src="./images/products/eclipse-ic.svg" 
                 alt="background" 

@@ -1,19 +1,20 @@
 .products {
   position: relative;
+  background-image: url(/src/images/products/ice-crema-bg1x-min.jpeg);
   background-color: rgb(188, 226, 226);
 
   @include mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  };
 }
 
 .products__container {
   padding: 60px 20px;
   @include tablet {
     padding: 60px 20px 82px;
-  }
+  };
   @include desktop {
     padding: 60px 12px 57px;
   }
@@ -69,7 +70,7 @@
     font-weight: 800;
     font-size: 22px;
     line-height: 1.23;
-  }
+  };
   @include desktop {
     font-size: 30px;
     line-height: 1.23;
@@ -83,7 +84,7 @@
   justify-content: center;
   @include tablet {
     gap: 16px;
-  }
+  };
   @include desktop {
     gap: 32px;
   }
@@ -95,11 +96,11 @@
 
   @include mobile {
     max-width: 370px;
-  }
+  };
 
   @include tablet {
     max-width: 224px;
-  }
+  };
   @include desktop {
     max-width: 370px;
   }
@@ -127,7 +128,7 @@
   @include tablet {
     padding: 108px 20px 20px;
     min-height: 428px;
-  }
+  };
   @include desktop {
     padding: 166px 64px 60px;
     min-height: 535px;
@@ -213,7 +214,7 @@
   @include tablet {
     font-size: 22px;
     line-height: 1.23;
-  }
+  };
   @include desktop {
     font-size: 30px;
     line-height: 1.23;
@@ -237,16 +238,25 @@
 .products__btn {
   height: 20px;
 
-  &:hover .hov {
-    display: block;
-  }
-  &:focus .foc {
-    display: block;
-  }
-  &:hover .def,
-  &:focus .def {
-    display: none;
-  }
+  // &:hover .hov {
+  //   display: block;
+  // }
+  // &:focus .foc {
+  //   display: block;
+  // }
+  // &:hover .def,
+  // &:focus .def {
+  //   display: none;
+  // }
+}
+.products__arrow {
+    width: 40px;
+    &:hover {
+      width: 50px;
+    };
+    &:focus{
+      width: 50px;
+    }
 }
 
 .foc,
@@ -282,7 +292,7 @@
     height: 995px;
 
     padding: 32px 40px;
-  }
+  };
   @include desktop {
     width: 568px;
     height: 995px;
@@ -345,7 +355,9 @@
   top: 0;
   border-radius: 100px;
   transform: translate(-50%, 0);
+  z-index: 1;
 }
+
 .modal-pro__img-bg {
   position: absolute;
   top: 7px;
@@ -371,7 +383,7 @@
 
   @include tablet {
     gap: 20px;
-  }
+  };
   @include desktop {
     gap: 20px;
   }
@@ -453,7 +465,7 @@
 
   @include tablet {
     min-width: 368px;
-  }
+  };
   @include desktop {
     width: 368px;
   }
@@ -465,14 +477,14 @@
 
   @include tablet {
     width: 368px;
-  }
+  };
   @include desktop {
     width: 368px;
   }
 }
 
 .coment__input {
-  width: 100%;
+  // width: 100%;
   height: 84px;
   padding: 11px;
 
@@ -483,6 +495,13 @@
   resize: none;
 
   margin-bottom: 24px;
+  @include tablet {
+    width: 100%;
+  };
+    @include desktop {
+      width: 100%;
+    }
+
 }
 .input__btn {
   font-weight: 600;
@@ -496,11 +515,11 @@
   border-radius: 10px;
   &:hover {
     background: #0a8817;
-  }
+  };
   &:focus {
     color: #ffffff;
     border: 2px solid #0a8817;
-  }
+  };
   &:disabled {
     background-color: #ababab;
   }
