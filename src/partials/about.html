@@ -1,6 +1,6 @@
-<!-- <div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="abaut__modal">
-        <button type="button" class="modal__btn">
+        <button type="button" class="modal__btn" data-modal-close>
         <svg class="icon__cloused" width="16" height="16">
             <use href="/src/images/icons.svg#icon-modal-close"></use>
         </svg>
@@ -20,4 +20,22 @@
             Constantly churning ice cream, whether by hand or mechanically, ensures that large, stiff ice crystals do not form within the mixture. The churning process also serves to introduce air and create a foam-like texture, further softening the mixture. 
         </p>
     </div>
-</div> -->
+</div>
+<script>
+(() => {
+const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+    body: document.querySelector("body"),
+};
+
+refs.openModalBtn.addEventListener("click", toggleModal);
+refs.closeModalBtn.addEventListener("click", toggleModal);
+
+function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    refs.body.classList.toggle("no-scroll");
+}
+})();
+</script>
