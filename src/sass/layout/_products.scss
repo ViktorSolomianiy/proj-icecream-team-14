@@ -1,6 +1,7 @@
 
 
 .products{
+    background-image: url(/src/images/products/ice-crema-bg1x-min.jpeg);
     position: relative;
 
     background-color: rgb(188, 226, 226);
@@ -228,19 +229,29 @@
 .products__btn {
     height: 20px; 
     
-    &:hover .hov{
-        display: block;
-    }
-    &:focus .foc {
-        display: block;
-    }
-    &:hover .def,
-    &:focus .def {
-        display: none;
-    }
+    // &:hover .hov{
+    //     width: 50px;
+    //     // display: block;
+    // }
+    // &:focus .foc {
+    //     // display: block;
+    //     width: 50px;
+    // }
+    // &:hover .def,
+    // &:focus .def {
+    //     display: none;
+    // }
     
 }
-
+.products__arrow{
+    width: 40px;
+    &:hover{
+        width: 50px;
+    }
+    &:focus {
+        width: 50px;
+    }
+}
 
 .foc, .hov {
    display: none;
