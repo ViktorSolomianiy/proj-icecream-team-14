@@ -23,8 +23,7 @@
         }
 
         @include largerThanMobile {
-            flex-direction: row;
-            
+            flex-direction: row;    
         }
     }
 
@@ -61,12 +60,9 @@
         background-color: transparent;
         border: 2px solid #F8D24E;
 
-      
-
         &:hover,
         &:focus {
-            border: 2px solid #0A8817;
-            
+            border: 2px solid #0A8817;            
         }
         
         &:focus {
@@ -74,8 +70,6 @@
         }
     }
     
-
-
     &__icon {
         stroke: currentColor;
     }
@@ -87,8 +81,7 @@
 
         @include largerThanMobile {
             display: flex;
-            justify-content: space-between;
-            
+            justify-content: space-between;    
         }
 
         @include desktop {
@@ -103,7 +96,6 @@
         @include tablet {
             padding-top: 24px;
         }
-
     }
 
     &__title {
@@ -149,7 +141,6 @@
         margin-right: 5px;
         @include font(700, 12, 1.23, 0.03);
             color: #131313;
-
         
         @include tablet{
             @include font(700, 14, 1.86, 0.03);
