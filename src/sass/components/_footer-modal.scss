@@ -10,11 +10,12 @@
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
-    
+
     @include tablet{
         min-height: 668px;
         max-width: 568px; 
     }
+    
     @include desktop{
         max-width: 568px;
         min-height: 668px;
