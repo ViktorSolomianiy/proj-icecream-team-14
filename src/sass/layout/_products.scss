@@ -3,6 +3,11 @@
   background-image: url(/src/images/products/ice-crema-bg1x-min.jpeg);
   background-color: rgb(188, 226, 226);
 
+  background-image: url(/src/images/products/ice-crema-bg1x-min.jpeg);
+  position: relative;
+
+  background-color: rgb(188, 226, 226);
+
   @include mobile {
     display: flex;
     align-items: center;
@@ -238,25 +243,28 @@
 .products__btn {
   height: 20px;
 
-  // &:hover .hov {
-  //   display: block;
+
+  // &:hover .hov{
+  //     width: 50px;
+  //     // display: block;
   // }
   // &:focus .foc {
-  //   display: block;
+  //     // display: block;
+  //     width: 50px;
   // }
   // &:hover .def,
   // &:focus .def {
-  //   display: none;
+  //     display: none;
   // }
 }
 .products__arrow {
-    width: 40px;
-    &:hover {
-      width: 50px;
-    };
-    &:focus{
-      width: 50px;
-    }
+  width: 40px;
+  &:hover {
+    width: 50px;
+  }
+  &:focus {
+    width: 50px;
+  }
 }
 
 .foc,
@@ -349,6 +357,7 @@
   margin-bottom: 31px;
 }
 
+
 .modal-pro__img {
   position: relative;
   left: 50%;
@@ -374,6 +383,14 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.modal-pro__img {
+  position: relative;
+  left: 50%;
+  top: 0;
+  border-radius: 100px;
+  transform: translate(-50%, 0);
+  z-index: 1;
 }
 
 .benefiit__list {
@@ -503,6 +520,7 @@
     }
 
 }
+
 .input__btn {
   font-weight: 600;
   font-size: 14px;
