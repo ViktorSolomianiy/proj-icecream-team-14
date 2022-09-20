@@ -1,6 +1,4 @@
                // ---------------modal-------------
-// visually-hidden
-
     .abaut__modal{
     width: 100%;
     max-width: 280px;
@@ -100,4 +98,14 @@ thumb-wrap {
         line-height: 1.37;
         margin-top: 32px;
     }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
