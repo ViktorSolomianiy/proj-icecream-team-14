@@ -34,6 +34,7 @@
   display: block;
   width: 40px;
   height: 37px;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 48px;
     height: 44px;
@@ -45,7 +46,6 @@
   }
 }
 .navigation__button-menu {
-  z-index: 6;
   position: absolute;
   top: 16px;
   right: 20px;
@@ -61,18 +61,15 @@
   }
 }
 .navigation__button-menu.is-open {
+  z-index: 6;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 32px;
     right: 32px;
   }
 }
-.navigation__menu-open,
-.navigation__menu-close {
-  fill: white;
-}
+
 .navigation__button-menu .navigation__menu-open {
   display: block;
-  fill: white;
 }
 .navigation__button-menu .navigation__menu-close {
   display: none;
@@ -150,6 +147,9 @@
   &:hover {
     color: #0a8817;
   }
+  &:focus {
+    color: #fcfcfc;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 48px;
@@ -168,6 +168,7 @@
   text-align: center;
   color: #131313;
   background-color: #84a178;
+
   &:hover {
     color: #0a8817;
   }
@@ -184,6 +185,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: calc(20 / 16);
+    color: #f8d24e;
   }
 }
 .navigation__button-purchase {
@@ -199,6 +201,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+
   &:hover {
     background-color: #0a8817;
   }
@@ -229,11 +232,13 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
+
   &:hover {
     background-color: #0a8817;
   }
   &:focus {
     background-color: #0a8817;
+
     color: #fcfcfc;
   }
   &:disabled {
@@ -389,7 +394,7 @@
     font-size: 18px;
     line-height: calc(23 / 18);
     margin-bottom: 20px;
-    max-width: 258px;
+    max-width: 230px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 38px;
@@ -402,8 +407,8 @@
   font-size: 34px;
   line-height: 0.95;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    font-size: 16px;
-    line-height: calc(13 / 16);
+    font-size: 24px;
+    line-height: calc(23 / 18);
   }
   @media screen and (min-width: 1200px) {
     font-size: 38px;
@@ -438,6 +443,7 @@
   line-height: calc(10 / 8);
   color: #131313;
   background-color: #84a178;
+
   @media screen and (min-width: 1200px) {
     border-radius: 10px;
   }
@@ -470,6 +476,7 @@
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
+
   &:hover {
     color: #0a8817;
   }
