@@ -243,19 +243,10 @@
 
 .products__btn {
   height: 20px;
-
-  // &:hover .hov {
-  //   display: block;
-  // }
-  // &:focus .foc {
-  //   display: block;
-  // }
-  // &:hover .def,
-  // &:focus .def {
-  //   display: none;
-  // }
 }
 .products__arrow {
+    margin-left: auto;
+    margin-right: auto;
     width: 40px;
     &:hover {
       width: 50px;
