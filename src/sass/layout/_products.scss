@@ -332,13 +332,7 @@
     margin-bottom: 31px;
 }
 
-.modal-pro__img{
-    position: relative;
-    left: 50%;
-    top: 0;
-    border-radius: 100px;
-    transform: translate(-50%, 0);
-}
+
 .modal-pro__img-bg{
     position: absolute;
     top: 7px;
@@ -350,6 +344,14 @@
 
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.modal-pro__img {
+    position: relative;
+    left: 50%;
+    top: 0;
+    border-radius: 100px;
+    transform: translate(-50%, 0);
+    z-index: 1;
 }
 
 .benefiit__list{
