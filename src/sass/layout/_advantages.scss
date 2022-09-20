@@ -1,80 +1,79 @@
 .advantages {
-    background-color: #84A178;
-    padding-top: 60px;
+  background-color: #84a178;
+  padding-top: 60px;
+  padding-bottom: 180px;
 }
 
 .text__list {
-    padding-top: 40px;
+  padding-top: 40px;
 
-    @include tablet {
-        width: 370px;
-        margin-right: 32px;
-        padding-top: 20px;
-    }
+  @include tablet {
+    width: 370px;
+    margin-right: 32px;
+    padding-top: 20px;
+  }
 
-    @include desktop {
-        width: 463px;
-        margin-left: 100px;
-    }
+  @include desktop {
+    width: 463px;
+    margin-left: 100px;
+  }
 }
 
 .text__item {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 176%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 176%;
 
-    text-align: center;
-    letter-spacing: 0.04em;
+  text-align: center;
+  letter-spacing: 0.04em;
 
-    color: #FCFCFC;
+  color: #fcfcfc;
 
-    @include tablet {
-        text-align: left;
-        width: 357px;
-    }
+  @include tablet {
+    text-align: left;
+    width: 357px;
+  }
 
-    @include desktop {
-        text-align: left;
-        width: 341px;
-    }
-
+  @include desktop {
+    text-align: left;
+    width: 341px;
+  }
 }
 
-
 .media {
-    @include tablet {
-        display: flex;
-        justify-content: space-between;
-    }
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    @include desktop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .image {
-    max-width: 100%;
+  max-width: 100%;
 
-    @include tablet {
-        margin-bottom: 48px;
-    }
+  @include tablet {
+    margin-bottom: 48px;
+  }
 
-    @include desktop {
-        margin-bottom: 60px;
-    }
+  @include desktop {
+    margin-bottom: 60px;
+  }
 
-    // & {
-    //     border-radius: 50%;
-    //     display: inline-block;
-    //     max-width: 100%;
-    //     position: relative;
-    //     z-index: 2;
-    //     top: 20px;
-    // }
+  // & {
+  //     border-radius: 50%;
+  //     display: inline-block;
+  //     max-width: 100%;
+  //     position: relative;
+  //     z-index: 2;
+  //     top: 20px;
+  // }
 }
 
 // .advantages__circle {
@@ -94,197 +93,189 @@
 //     }
 // }
 
-
-
 .up-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
 
-    padding-bottom: 12px;
+  padding-bottom: 12px;
 
-    color: #FCFCFC;
+  color: #fcfcfc;
 }
 
-.title {    
-    
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    padding-bottom: 32px;
+.title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: #FCFCFC;
-    
+  padding-bottom: 32px;
+
+  color: #fcfcfc;
 }
 
 .btn {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-    color: #131313;
+  color: #131313;
 }
 
 .design {
-    background: #F8D24E;
-    border-radius: 10px;
-    padding-top: 12px;
-    padding-right: 30px;
-    padding-bottom: 12px;
-    padding-left: 34px;
+  background: #f8d24e;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  padding-left: 34px;
 
-    margin-top: 20px;
-    margin-bottom: 42px;
+  margin-top: 20px;
+  margin-bottom: 42px;
 
-    @include tablet {
-        margin-top: 48px;
+  @include tablet {
+    margin-top: 48px;
+  }
+
+  &:hover {
+    @include desktop {
+      background-color: #0a8817;
     }
+  }
 
-    &:hover {
-        @include desktop {
-            background-color: #0A8817;
-        }
+  &:focus {
+    @include desktop {
+      background-color: #0a8817;
+      color: #fcfcfc;
     }
-
-    &:focus {
-        @include desktop {
-            background-color: #0A8817;
-            color: #FCFCFC
-        }
-    }
+  }
 }
 
 .wraper {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  @include flex;
+
+  @include tablet {
     @include flex;
+    margin-bottom: 32px;
+  }
 
-    @include tablet {
-        @include flex;
-        margin-bottom: 32px;
-    }
-
-    @include desktop {
-        margin-bottom: 40px;
-    }
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .btn-flex {
-    @include flex;
+  @include flex;
 
-    @include tablet {
-        justify-content: flex-start;
-    }
+  @include tablet {
+    justify-content: flex-start;
+  }
 
-    @include desktop {
-        justify-content: flex-start;
-    }
+  @include desktop {
+    justify-content: flex-start;
+  }
 }
 
 .circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: #F8D24E;
-    border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f8d24e;
+  border-radius: 50%;
 }
 
 .cow::after {
-    content: url(/src/images/kow/cow.png);
+  content: url(/src/images/kow/cow.png);
 }
 
 .weight::after {
-    content: url(/src/images/kow/weight.png);
+  content: url(/src/images/kow/weight.png);
 }
 
 .icecrema:after {
-    content: url(/src/images/kow/icecrema.png);
+  content: url(/src/images/kow/icecrema.png);
 }
 
-
-
-
 .numbers {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+  font-family: 'Roboto';
+  @include font(700, 36, 1.17, 0.04);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #fcfcfc;
 
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  @include tablet {
+    @include font(700, 48, 1.23, 0.04);
+  }
 
-    margin-bottom: 18px;
-
-    color: #FCFCFC;
+  @include desktop {
+    @include font(700, 58, 1.22, 0.04);
+  }
 }
 
 .second-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 170%;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fcfcfc;
 
-    text-align: center;
-
-    margin-bottom: 25px;
-
-    color: #FCFCFC;
-
-    @include tablet {
-        margin-bottom: 40px;
-    }
+  @include tablet {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+  }
 }
 
 .advantages__list {
-    list-style: none;
+  list-style: none;
 
-    @include tablet {
-        @include flex;
-    }
+  @include tablet {
+    @include flex;
+  }
 
-    @include desktop {
-        display: flex;
-    }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .advantages__item {
-    @include tablet {
-        margin-right: 80px;
-    }
+  @include tablet {
+    margin-right: 80px;
+  }
 
+  @include desktop {
+    margin-right: 32px;
+  }
+
+  &:last-child {
     @include desktop {
-        margin-right: 32px;
+      margin-right: 0;
     }
+  }
 
-    &:last-child {
-        @include desktop {
-            margin-right: 0;
-        }
+  &:last-child {
+    @include tablet {
+      margin-right: 0;
     }
-
-    &:last-child {
-        @include tablet {
-            margin-right: 0;
-        }
-    }
+  }
 }
