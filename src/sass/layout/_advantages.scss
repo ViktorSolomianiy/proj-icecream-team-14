@@ -1,0 +1,253 @@
+.advantages {
+    background-color: #84A178;
+    padding-top: 60px;
+}
+
+.text__list {
+    padding-top: 40px;
+
+    @include tablet {
+        width: 370px;
+        margin-right: 32px;
+        padding-top: 20px;
+    }
+
+    @include desktop {
+        
+    }
+}
+
+.text__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FCFCFC;
+
+    @include tablet {
+        text-align: left;
+    }
+
+}
+
+
+.media {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.image {
+    max-width: 100%;
+
+    @include tablet {
+        margin-bottom: 48px;
+    }
+
+    & {
+        border-radius: 50%;
+        display: inline-block;
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+        top: 20px;
+    }
+}
+
+.advantages__circle {
+    width: 278px;
+    height: 278px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: #F8D24E;
+        border-radius: 50%;
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+
+
+.up-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding-bottom: 12px;
+
+    color: #FCFCFC;
+}
+
+.title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    padding-bottom: 32px;
+
+    color: #FCFCFC;
+}
+
+.btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #131313;
+}
+
+.design {
+    background: #F8D24E;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+
+    margin-top: 20px;
+    margin-bottom: 42px;
+
+    @include tablet {
+        margin-top: 48px;
+    }
+
+    &:hover {
+        @include desktop {
+            background-color: #0A8817;
+        }
+    }
+
+    &:focus {
+        @include desktop {
+            background-color: #0A8817;
+            color: #FCFCFC
+        }
+    }
+}
+
+.wraper {
+    margin-bottom: 16px;
+    @include flex;
+
+    @include tablet {
+        @include flex;
+        margin-bottom: 32px;
+    }
+}
+
+.btn-flex {
+    @include flex;
+
+    @include tablet {
+        justify-content: flex-start;
+    }
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #F8D24E;
+    border-radius: 50%;
+}
+
+.cow::after {
+    content: url(/src/images/kow/cow.png);
+}
+
+.weight::after {
+    content: url(/src/images/kow/weight.png);
+}
+
+.icecrema:after {
+    content: url(/src/images/kow/icecrema.png);
+}
+
+
+
+
+.numbers {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+
+    color: #FCFCFC;
+}
+
+.second-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #FCFCFC;
+
+    @include tablet {
+        margin-bottom: 0;
+    }
+}
+
+.advantages__list {
+    list-style: none;
+
+    @include tablet {
+        @include flex
+    }
+}
+
+.advantages__item {
+    @include tablet {
+        margin-right: 80px;
+    }
+
+    @include desktop {
+        margin-right: 32px;
+    }
+
+    &:last-child {
+        @include tablet {
+            margin-right: 0;
+        }
+    }
+}
