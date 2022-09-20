@@ -46,18 +46,18 @@
             animation-iteration-count: infinite;
         }
         
-        .slide-1 {
+        .slide-1 .slide-img {
             position: relative;
-            animation-delay: 1s;
+            animation-delay: 0s;
         }
         
-        .slide-2 {
+        .slide-2 .slide-img {
             position: absolute;
             top: 0;
             animation-delay: 3s;
         }
         
-        .slide-3 {
+        .slide-3 .slide-img {
             position: absolute;
             top: 0;
             animation-delay: 6s;
