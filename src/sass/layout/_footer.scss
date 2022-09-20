@@ -1,106 +1,148 @@
 .footer {
     background-color: #84A178;
-    padding-top: 90px;
+    padding-top: 32px;
     margin-left: 0;
     margin-right: 0;
+
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        padding-bottom: 38px;
+        gap: 16px;
+        
+        
+        @include tablet {
+            padding-bottom: 40px;
+        }
+     
+        @include desktop {
+            padding-bottom: 120px;
+        }
+
+        @include largerThanMobile {
+            flex-direction: row;
+            
+        }
+    }
+
+    &__btn {
+        display: flex;
+        width: 196px;
+        height: 42px;
+        gap: 6px;
+
+        @include font(600, 14, 1.29, 0.03);
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #131313;
+        border-radius: 10px;
+    }
+
+
+    &__locations__btn {
+        background-color: #F8D24E;
+
+        &:hover,
+        &:focus {
+          background-color: #0A8817;
+        }
+
+        &:focus {
+            color: #FCFCFC; 
+        }
+    }
+
+    &__franchise__btn {
+        background-color: transparent;
+        border: 2px solid #F8D24E;
+
+      
+
+        &:hover,
+        &:focus {
+            border: 2px solid #0A8817;
+            
+        }
+        
+        &:focus {
+            color: #FCFCFC; 
+        }
+    }
     
+
+
+    &__icon {
+        stroke: currentColor;
+    }
     
     &__container {
         @include tablet {
+            padding-bottom: 32px;
+        }
+
+        @include largerThanMobile {
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            
+        }
+
+        @include desktop {
+           padding-bottom: 54px; 
+           align-items: flex-end;
         }
     }
 
+    &__communication {
+        flex-shrink: 0;
 
-    // &__locations__btn {
-    //     display: flex;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     // gap: 16px;
-    //     padding: 12px 34px;
-    //     margin-bottom: 16px;
-    
-    //     @include font(600, 14, 1.29, 0.03);
-        
-    //     align-items: center;
-    //     text-align: center;
-    //     color: #131313;
-
-    //     background: #F8D24E;
-    //     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    //     border-radius: 10px;
-        
-    // }
-
-    // &__franchise__btn {
-    //     display: flex;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     // gap: 16px;
-    //     padding: 12px 46px;
-    //     margin-bottom: 39px;
-    
-    //     @include font(600, 14, 1.29, 0.03);
-        
-    //     align-items: center;
-    //     text-align: center;
-    //     color: #131313;
-
-    //     background-color: transparent;
-    //     border: 2px solid #F8D24E;
-    //     border-radius: 10px;
-        
-    // }
-
-    &__name {
-        max-width: 238px;
-        margin-bottom: 16px;
-        
         @include tablet {
-            margin-bottom: 9px;
-            max-width: 352px;
+            padding-top: 24px;
         }
+
     }
 
     &__title {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
         @include font(700, 18, 1.22, 0.02);
         color: #FCFCFC;
         
         @include tablet {
             @include font(700, 26, 1.23, 0.04);
         }
-    }
 
-    &__name2 {
-        max-width: 200px;
+        @include desktop {
+            @include font(400, 30, 1.23, 0.04);
+        }
         
-        @include tablet {
-            margin-bottom: 32px;
-            max-width: 340px;
-        }
-    }
+        &--bold {
+            margin-top: 16px;
+            @include font(700, 34, 1.2, 0.04);
     
-    &__title2 {
-        @include font(700, 34, 1.2, 0.04);
-            color: #FCFCFC;
-
-        @include tablet {
-            @include font(700, 48, 1.22, 0.06);
+            @include tablet {
+                margin-top: 10px;
+                @include font(700, 48, 1.22, 0.06);
+            }
+    
+            @include desktop {
+                margin-top: 14px;
+                @include font(700, 58, 1.22, 0.06);
+            }
         }
     }
 
-    &__contact{
+    &__contact {
         display: flex;
-        justify-content: right;
-        align-items: end;
-        margin-top: 38px;
-        margin-bottom: 40px;
-
-        @include tablet {
-            margin-bottom: 56px;
-        }
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top: 38px;
+        padding-bottom: 40px;
     }
 
     &__invite {
@@ -108,10 +150,15 @@
         @include font(700, 12, 1.23, 0.03);
             color: #131313;
 
+        
         @include tablet{
             @include font(700, 14, 1.86, 0.03);
         }
-    }
+        
+        @include desktop {
+            @include font(700, 15, 1.86, 0.02);
+        }
+    }    
 
     &__tel {
         @include font(700, 12, 1.23, 0.03);
@@ -120,41 +167,41 @@
         @include tablet{
             @include font(700, 14, 1.86, 0.03);
         }
-    }
 
-    &__line {
-        height: 1px; 
-        background-color: #E1E1E1;
-        margin-bottom: 16px;
-        
-        @include tablet {
-            margin-bottom: 14px;
+        @include desktop {
+            @include font(700, 15, 1.86, 0.02);
         }
-
     }
 
     &__copyright {
+        padding-top: 16px;
         padding-bottom: 62px;
+        border-top: 1px solid #E1E1E1;
         
         @include font(700, 14, 1.5, 0.03);
-            text-align: center;
-            color: #7A7A7A;
+            
+        text-align: center;
+        color: #7A7A7A;
 
         @include tablet {
+            padding-top: 14px;
+            padding-bottom: 14px;
             display: flex;
             justify-content: center;
-            padding-bottom: 13px;
 
             @include font(700, 14, 1.9, 0.02);
         }
         
-        &__tm {
-            max-width: 160px;
-            display: inline-block;
-            
-            @include tablet {
-                max-width: 298px;
-            }
+        @include desktop {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            width: 1168px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include font(700, 12, 1.9, 0.02);
         }
     }
 }
@@ -164,11 +211,11 @@
     justify-content: right;
     gap: 28px;
     margin-top: 42px;
+    
     @include tablet {
         gap: 30px;
     }
 
-  
     &__link {
       width: 34px;
       height: 34px;
@@ -200,6 +247,5 @@
       .social__link:focus & {
         fill: #ffffff;
       }
-    }
-  }
-  
+    } 
+ }

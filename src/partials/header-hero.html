@@ -1,33 +1,249 @@
-<header class="header">
-  <div class="header__container container">
-    <nav class="navigation">
-      <button
-        class="navigation__button-menu"
-        type="button"
-        data-menu-button
-      ></button>
-
-      <div class="navigation__lists" data-menu>
-        <ul class="navigation__list list">
-          <li class="navigation__item">
-            <a class="navigation__link link" href="./index.html">Home</a>
-          </li>
-          <li class="navigation__item">
-            <button type="button" class="navigation__button-specification">
-              How it&#8217;s made?
-            </button>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link link" href="">Our products</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link link" href="">Contact</a>
-          </li>
-        </ul>
-        <button type="button" class="navigation__button-purchase">
-          Buy now
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <nav class="navigation">
+        <a href="" class="navigation__logo link">
+          <picture>
+            <source
+              srcset="
+                ./images/header-hero/desk-logo.png    1x,
+                ./images/header-hero/desk-logo@2x.png 2x
+              "
+              media="(min-width:1200px)"
+              sizes="60px"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/header-hero/tab-logo.png    1x,
+                ./images/header-hero/tab-logo@2x.png 2x
+              "
+              media="(min-width:768px)"
+              sizes="48px"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/header-hero/mob-logo.png    1x,
+                ./images/header-hero/mob-logo@2x.png 2x
+              "
+              media="(max-width:767px)"
+              sizes="40px"
+              type="image/png"
+            />
+            <img
+              src="./images/header-hero/mob-logo.png"
+              alt="logo"
+              width="40"
+              height="37"
+            />
+          </picture>
+        </a>
+        <button
+          type="button"
+          class="navigation__button-menu"
+          data-menu-button-header
+        >
+          <svg width="32" height="32">
+            <use
+              class="navigation__menu-open"
+              href="./images/icons.svg#icon-open-menu"
+            ></use>
+            <use
+              class="navigation__menu-close"
+              href="./images/icons.svg#icon-close-menu"
+            ></use>
+          </svg>
         </button>
+        <div class="navigation__lists" data-menu-header>
+          <a href="" class="navigation__logo-menu link">
+            <picture>
+              <source
+                srcset="
+                  ./images/header-hero/tab-logo.png    1x,
+                  ./images/header-hero/tab-logo@2x.png 2x
+                "
+                media="(min-width:768px)"
+                sizes="48px"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/header-hero/mob-logo.png    1x,
+                  ./images/header-hero/mob-logo@2x.png 2x
+                "
+                media="(max-width:767px)"
+                sizes="40px"
+                type="image/png"
+              />
+              <img
+                src="./images/header-hero/mob-logo.png"
+                alt="logo"
+                width="40"
+                height="37"
+              />
+            </picture>
+          </a>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="" class="navigation__link link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__button-specification link"
+                >How it&#8217;s made?</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link link">Our products</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link link">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="navigation__button-purchase">
+            Buy now<svg width="12" height="12" class="navigation__button-arrow">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <button type="button" class="navigation__button-header-purchase">
+        Buy now<svg width="12" height="12" class="navigation__button-arrow">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__box">
+          <h1 class="hero__title no-style">
+            icea cream made with
+            <span class="hero__title-mofified">passion</span>
+          </h1>
+          <div class="hero__links">
+            <a href="" class="hero__products link">Products</a>
+            <a href="" class="hero__button-specification link"
+              >How it&#8217;s made?</a
+            >
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/header-hero/desk-hero.png    1x,
+              ./images/header-hero/desk-hero@2x.png 2x
+            "
+            media="(min-width:1200px)"
+            sizes=""
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/header-hero/tab-hero.png    1x,
+              ./images/header-hero/tab-hero@2x.png 2x
+            "
+            media="(min-width:768px)"
+            sizes=""
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/header-hero/mob-hero.png    1x,
+              ./images/header-hero/mob-hero@2x.png 2x
+            "
+            media="(max-width:767px)"
+            sizes=""
+            type="image/png"
+          />
+          <img
+            class="hero__image"
+            src="./images/header-hero/mob-hero.png"
+            alt="ice-cream"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/header-hero/desk-heroback.png    1x,
+              ./images/header-hero/desk-heroback@2x.png 2x
+            "
+            media="(min-width:1200px)"
+            sizes=""
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/header-hero/tab-heroback.png    1x,
+              ./images/header-hero/tab-heroback@2x.png 2x
+            "
+            media="(min-width:768px)"
+            sizes=""
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/header-hero/mob-heroback.png    1x,
+              ./images/header-hero/mob-heroback@2x.png 2x
+            "
+            media="(max-width:767px)"
+            sizes=""
+            type="image/png"
+          />
+          <img
+            class="hero__imageback"
+            src="./images/header-hero/mob-heroback.png"
+            alt="background"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/header-hero/desk-icecreams.png    1x,
+              ./images/header-hero/desk-icecreams@2x.png 2x
+            "
+            media="(min-width:1200px)"
+            sizes=""
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/header-hero/tab-icecreams.png    1x,
+              ./images/header-hero/tab-icecreams@2x.png 2x
+            "
+            media="(min-width:768px)"
+            sizes=""
+            type="image/png"
+          />
+          <img
+            class="hero__icecreams"
+            src="./images/header-hero/tab-icecreams.png"
+            alt="ice creams"
+          />
+        </picture>
+        <div class="hero__additional">
+          <p class="hero__additional-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a href="" class="hero__additional-link">
+            <svg class="hero__additional-icon" width="40" height="18">
+              <use href="./images/icons.svg#icon-arrowtoright"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="hero__structure">
+          <p class="hero__structure-text">
+            <span class="hero__structure-text--number">16</span>cafes
+          </p>
+          <p class="hero__structure-text">
+            <span class="hero__structure-text--number">23</span>food trucks
+          </p>
+        </div>
       </div>
-    </nav>
-  </div>
-</header>
+
+      <script src="./js/header-menu.js"></script>
+    </section>
+  </main>
+</body>
