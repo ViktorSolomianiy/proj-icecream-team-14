@@ -1,14 +1,15 @@
+<!-- PRODUCTS -->
 <section class="products">
     <div class="products__container">
-        <h1 class="container__title"><span class="product__accent">100% natural</span> products</h1>
+        <h1 class="container__title" id="toproducts"><span class="product__accent">100% natural</span> products</h1>
         <ul class="products__list list">
             <li class="products__item">
-                <picture>
-                    <source srcset="./images/products/ice-cre-des-1x-min.jpeg 1x,
-                    ./images/products/ice-cre-des-2x-min.jpeg 2x" media="(min-width:1200px)">
-                    <img src="./images/products/ice-cream-1x-min.jpeg" width="200px" height="200px" alt="ice-crema" class="products__img">
-                </picture>
-                
+                <img 
+                    src="./images/products/ice-cream-1x-min.jpeg" 
+                    width="200px" 
+                    height="200px" 
+                    alt="ice-crema"
+                    class="products__img">
                 <img 
                     src="./images/products/eclipse-ic.svg" 
                     width="200px" 
@@ -23,9 +24,15 @@
                             stabilizer</p>
                     </div>
                     
-                    <button class="products__btn btn">
-                        <svg class="products__arrow" width="40px" height="">
+                    <button class="products__btn btn" data-prod-open>
+                        <svg class="products__arrow def" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow1"></use>
+                        </svg>
+                        <svg class="products__arrow hov" width="40px" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow2"></use>
+                        </svg>
+                        <svg class="products__arrow foc" width="40px" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow3"></use>
                         </svg>
                     </button>
                 </div>
@@ -53,9 +60,15 @@
                             preservatives and flavor enhancers</p>
                     </div>
                     
-                    <button class="products__btn btn">
-                        <svg class="products__arrow" width="40px" height="">
+                    <button class="products__btn btn" data-prod-open>
+                        <svg class="products__arrow def" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow1"></use>
+                        </svg>
+                        <svg class="products__arrow hov" width="40px" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow2"></use>
+                        </svg>
+                        <svg class="products__arrow foc" width="40px" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow3"></use>
                         </svg>
                     </button>
                 </div>
@@ -84,9 +97,15 @@
                             and other sweets of your choice</p>
                     </div>
                     
-                    <button class="products__btn btn">
-                        <svg class="products__arrow" width="40px" height="">
+                    <button class="products__btn btn" data-prod-open>
+                        <svg class="products__arrow def" width="40px" height="">
                             <use href="./images/products/symbol.svg#icon-arrow1"></use>
+                        </svg>
+                        <svg class="products__arrow hov" width="40px" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow2"></use>
+                        </svg>
+                        <svg class="products__arrow foc" width="40px" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow3"></use>
                         </svg>
                     </button>
                 </div>
@@ -94,32 +113,48 @@
             </li>
         </ul>
     </div>
+</section>
 
-    <!-- <div class="modal-pro is-hidden">
-        <button type="button" class="modal-pro__btn-close btn">X</button>
+<!-- MODAL FORM -->
+    <div class="modal-pro is-hidden" data-prod>
+        <button type="button" class="modal-pro__btn-close btn" data-prod-close>X</button>
+
         <h2 class="modal-pro__title">Chololate icecream</h2>
         <div class="modal-pro__view">
-            <img 
-                src="./images/products/modal-img-mob-1x-min.jpeg" 
-                alt="ice cream" 
-                class="modal-pro__img"
-            >
+            <div class="modal-pro__container">
+                <img 
+                    src="./images/products/modal-img-mob-1x-min.jpeg" 
+                    alt="ice cream" 
+                    class="modal-pro__img"
+                >
+                <img 
+                src="./images/products/eclipse-ic.svg" 
+                alt="background" 
+                width="131px" 
+                height="131px" 
+                class="modal-pro__img-bg"
+                >
+            </div>
+            
             <ul class="benefiit__list list">
                 <li class="benefit__item">
                     <span class="benefit__circle">320</span>
-                    kcal</li>
+                    kcal
+                </li>
                 <li class="benefit__item">
                     <span class="benefit__circle">4g</span>
-                    Prote...</li>
+                    Prote...
+                </li>
                 <li class="benefit__item">
                     <span class="benefit__circle">8,2g</span>
-                    Fats</li>
+                    Fats
+                </li>
                 <li class="benefit__item">
                     <span class="benefit__circle">40,4g</span>
-                    Carbs</li>
+                    Carbs
+                </li>
             </ul>
-        </div> -->
-        
+        </div>
         <div class="ingredients">
             <h3 class="ingredients__title">Ingredients</h3>
             <ul class="ingredients__list list">
@@ -152,37 +187,18 @@
         <div class="modal-pro-input input">
             <ul class="input__list list">
                 <li class="input__item">
-                    <input 
-                        type="text"
-                        class="input__form"
-                        name="user-name"
-                        required
-                        id="user-name"
-                        placeholder="Name"
-                    >
+                    <input type="text" class="input__form" name="user-name" required id="user-name" placeholder="Name">
                 </li>
                 <li class="input__item">
-                    <input 
-                        type="tel"
-                        class="input__form"
-                        name="user-tel"
-                        required
-                        minlength="10"
-                        id="user-tel"
-                        placeholder="Phone"
-                    >
-                </li>  
+                    <input type="tel" class="input__form" name="user-tel" required minlength="10" id="user-tel"
+                        placeholder="Phone">
+                </li>
             </ul>
             <div class="coment">
-                <textarea 
-                    class="coment__input" 
-                    name="user__coment" 
-                    id="" 
-                    placeholder="Comment"
-                ></textarea>
+                <textarea class="coment__input" name="user__coment" id="" placeholder="Comment"></textarea>
                 <button type="submit" class="input__btn btn">Submit</button>
             </div>
-            
+    
         </div>
     </div>
-</section>
+    <script src="./js/products.js"></script>
