@@ -249,28 +249,17 @@
 .products__btn {
   height: 20px;
 
-
-  // &:hover .hov{
-  //     width: 50px;
-  //     // display: block;
-  // }
-  // &:focus .foc {
-  //     // display: block;
-  //     width: 50px;
-  // }
-  // &:hover .def,
-  // &:focus .def {
-  //     display: none;
-  // }
 }
 .products__arrow {
-  width: 40px;
-  &:hover {
-    width: 50px;
-  }
-  &:focus {
-    width: 50px;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    &:hover {
+      width: 50px;
+    };
+    &:focus{
+      width: 50px;
+    }
 }
 
 .foc,
