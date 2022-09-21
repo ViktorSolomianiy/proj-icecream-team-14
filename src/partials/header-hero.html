@@ -426,8 +426,189 @@
           <button type="submit" class="header-modal__btn">Submit</button>
         </form>
       </div>
+
     </div>
   </section>
-</main>
 <script src="./js/header-menu.js"></script>
 <script src="./js/modalheader.js"></script>
+      <div class="backdroped is-hidden" data-modal-header data-modal-headers>
+        <div class="header-modal">
+          <div>
+            <button
+              type="button"
+              class="header-modal__close"
+              data-modal-close-head
+            >
+              <svg class="header-modal__svg" width="16" height="16">
+                <use
+                  href="./images/icons.svg#icon-close-line-header-modal"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <h3 class="header-modal__subtitle">Buy now</h3>
+          <ul class="header-modal__product">
+            <li class="header-modal__list list">
+              <div class="header-modal__ice-cream">
+                <input
+                  type="radio"
+                  name="view"
+                  id="ice-cream"
+                  class="header-modal__icecream-input is-hidden"
+                  checked="checked"
+                />
+                <label for="ice-cream" class="header-modal__text-icecream"
+                  >ice cream</label
+                >
+              </div>
+              <div class="header-modal__ball-icecream"></div>
+              <picture class="header-modal__img-icecream">
+                <source
+                  srcset="
+                    ./images/header-modal/desktop-icecream.png    1x,
+                    ./images/header-modal/desktop-icecream-x2.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/header-modal/mob-icecream.png    1x,
+                    ./images/header-modal/mob-icecream-x2.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/header-modal/mob-icecream.png    1x,
+                    ./images/header-modal/mob-icecream-x2.png 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/header-modal/mob-icecream.png"
+                  alt="Ice Cream"
+                  width="132"
+                  height="132"
+                />
+              </picture>
+            </li>
+            <li class="header-modal__list list">
+              <div class="header-modal__ice-coffee">
+                <input
+                  type="radio"
+                  name="view"
+                  id="ice-coffee"
+                  class="header-modal__icecoffee-input is-hidden"
+                  checked="checked"
+                />
+                <label for="ice-coffee" class="header-modal__text-icecoffee"
+                  >ice coffee</label
+                >
+              </div>
+              <div class="header-modal__ball-icecoffee"></div>
+              <picture class="header-modal__img-icecoffee">
+                <source
+                  srcset="
+                    ./images/header-modal/desktop-icecoffee.png    1x,
+                    ./images/header-modal/desktop-icecoffee-x2.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/header-modal/mob-icecoffee.png    1x,
+                    ./images/header-modal/mob-icecoffee-x2.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/header-modal/mob-icecoffee.png    1x,
+                    ./images/header-modal/mob-icecoffee-x2.png 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/header-modal/mob-icecoffee.png"
+                  alt="Ice Coffee"
+                  width="132"
+                  height="132"
+                />
+              </picture>
+            </li>
+            <li class="header-modal__list list">
+              <div class="header-modal__milkshake">
+                <input
+                  type="radio"
+                  name="view"
+                  id="milkshake"
+                  class="header-modal__milkshake-input is-hidden"
+                  checked="checked"
+                />
+                <label for="milkshake" class="header-modal__text-milkshake"
+                  >milkshake</label
+                >
+              </div>
+              <div class="header-modal__ball-milkshake"></div>
+              <picture class="header-modal__img-milkshake">
+                <source
+                  srcset="
+                    ./images/header-modal/desktop-milkshake.png    1x,
+                    ./images/header-modal/desktop-milkshake-x2.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/header-modal/mob-milkshake.png    1x,
+                    ./images/header-modal/mob-milkshake-2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/header-modal/mob-milkshake.png    1x,
+                    ./images/header-modal/mob-milkshake-2x.png 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/header-modal/mob-milkshake.png"
+                  alt="Milkshake"
+                  width="132"
+                  height="132"
+                />
+              </picture>
+            </li>
+          </ul>
+          <form class="header-modal__form">
+            <input
+              type="text"
+              class="header-modal__input"
+              placeholder="Name"
+              pattern="[A-Za-z]{1,40}"
+            />
+            <input
+              type="tel"
+              class="header-modal__input"
+              placeholder="Phone"
+              required
+              pattern="[0-9]{1,13}"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              class="header-modal__area"
+              rows="10"
+              placeholder="Comment"
+            ></textarea>
+            <button type="submit" class="header-modal__btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/header-menu.js"></script>
+  <script src="./js/modalheader.js"></script>
+</body>
