@@ -4,7 +4,6 @@
     margin-left: 0;
     margin-right: 0;
 
-
     &__buttons {
         display: flex;
         flex-direction: column;
@@ -24,7 +23,6 @@
 
         @include largerThanMobile {
             flex-direction: row;
-            
         }
     }
 
@@ -43,7 +41,6 @@
         border-radius: 10px;
     }
 
-
     &__locations__btn {
         background-color: #F8D24E;
 
@@ -61,12 +58,9 @@
         background-color: transparent;
         border: 2px solid #F8D24E;
 
-      
-
         &:hover,
         &:focus {
-            border: 2px solid #0A8817;
-            
+            border: 2px solid #0A8817;   
         }
         
         &:focus {
@@ -74,8 +68,6 @@
         }
     }
     
-
-
     &__icon {
         stroke: currentColor;
     }
@@ -87,8 +79,7 @@
 
         @include largerThanMobile {
             display: flex;
-            justify-content: space-between;
-            
+            justify-content: space-between;   
         }
 
         @include desktop {
@@ -103,7 +94,6 @@
         @include tablet {
             padding-top: 24px;
         }
-
     }
 
     &__title {

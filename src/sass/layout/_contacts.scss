@@ -6,8 +6,7 @@
     }
     
     @include desktop {
-        height: 474px;
-        
+        height: 474px;     
     }
 
     &__container {
@@ -18,7 +17,6 @@
         top: -345px;
         position: relative;
         
-
         @include tablet {
            gap: 16px;
            height: 528px;
@@ -56,32 +54,11 @@
         }
     }
 
-    // &__info:not(:last-child) {
-    //     margin-bottom: 20px;
-        
-    //     @include tablet {
-    //         margin-bottom: 60px;
-    //     }
-    //     @include desktop {
-    //         margin-bottom: 64px;
-    //     }
-    // }
-
-    // &__info:last-child {
-    //     margin-bottom: 32px;
-        
-    //     @include tablet {
-    //         margin-bottom: 60px;
-    //     }
-        
-    //     @include desktop {
-    //         margin-bottom: 64px;
-    //     }
-    // }
-
-
     &__name {
-        @include font(500, 12, 1.83, 0.04);
+        @include font(500, 12, 1.86, 0.04);  
+        display: flex;
+        justify-content: center;
+        
         color: #131313;
         background-color: #F8D24E;
         border-radius: 4px;
