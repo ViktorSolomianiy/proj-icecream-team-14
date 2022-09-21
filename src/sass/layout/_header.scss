@@ -221,10 +221,12 @@
   &:hover {
     background-color: #0a8817;
   }
+
   &:focus {
     background-color: #0a8817;
     color: #fcfcfc;
   }
+
   &:disabled {
     background-color: #ababab;
   }
@@ -255,8 +257,8 @@
   }
   &:focus {
     background-color: #0a8817;
-
     color: #fcfcfc;
+    fill: #fcfcfc;
   }
   &:disabled {
     background-color: #ababab;
