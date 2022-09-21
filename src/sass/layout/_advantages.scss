@@ -176,17 +176,15 @@
   align-items: center;
   text-align: center;
   color: #131313;
-  & :focus {
+  
+  &:focus {
+    color:#ffffff;
     fill: #ffffff;
   }
 }
 
 .abaut__btn-icon {
   margin-left: 4px;
-
-  .btn:focus & {
-    fill: #ffffff;
-  }
 }
 
 .design {
