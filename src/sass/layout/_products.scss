@@ -525,13 +525,10 @@
   resize: none;
 
   margin-bottom: 24px;
-  @include tablet {
+  
+  @include largerThanMobile {
     width: 100%;
-  };
-    @include desktop {
-      width: 100%;
-    }
-
+  }
 }
 
 .input__btn {
