@@ -312,7 +312,8 @@
     // height: 995px;
 
     padding: 32px 40px;
-  };
+  }
+
   @include desktop {
     width: 568px;
     // height: 995px;
@@ -534,6 +535,7 @@
 }
 
 .input__btn {
+  justify-content: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
