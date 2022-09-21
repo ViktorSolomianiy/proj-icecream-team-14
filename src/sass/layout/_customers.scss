@@ -1,3 +1,21 @@
+.gallery-customer {
+  
+  padding-top: 186px;
+  padding-bottom: 377px;
+  
+  @include tablet {
+   
+    padding-top: 223px;
+    padding-bottom: 384px;
+  }
+
+  @include desktop {
+   
+    padding-top: 456px;
+    padding-bottom: 196px;
+  }
+
+}
 .customer-overlay {
   max-width: 100%;
   height: 100%;
@@ -67,22 +85,20 @@
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 186px;
-  padding-bottom: 394px;
+ 
+  
   @include tablet {
     max-width: 768px;
     padding-left: 31px;
     padding-right: 32px;
-    padding-top: 223px;
-    padding-bottom: 383px;
+   
   }
 
   @include desktop {
     max-width: 1200px;
     padding-left: 116px;
     padding-right: 116px;
-    padding-top: 456px;
-    padding-bottom: 207px;
+   
   }
 }
 .swiper-slide {

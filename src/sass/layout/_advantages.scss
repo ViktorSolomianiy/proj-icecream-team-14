@@ -1,144 +1,191 @@
 .advantages {
-    background-color: #84A178;
-    padding-top: 60px;
+  background-color: #84a178;
+  padding-top: 60px;
+  padding-bottom: 180px;
+}
+.advantages__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+  }
 }
 
 .text__list {
-    padding-top: 40px;
+  padding-top: 40px;
 
-    @include tablet {
-        width: 370px;
-        margin-right: 32px;
-        padding-top: 20px;
-    }
+  @include tablet {
+    width: 370px;
+    margin-right: 32px;
+    padding-top: 20px;
+  }
 
-    @include desktop {
-        width: 463px;
-        margin-left: 100px;
-    }
+  @include desktop {
+    width: 563px;
+    margin: 0 auto;
+
+    // width: 463px;
+    // margin-left: 100px;
+  }
 }
 
-.text__item {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 176%;
+.text__item-1,
+.text__item-2,
+.text__item-3 {
+  @include font(400, 12, 1.75, 0.04);
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #fcfcfc;
 
-    text-align: center;
-    letter-spacing: 0.04em;
+  @include tablet {
+    margin-bottom: 8px;
+    margin-left: 32px;
+    text-align: left;
+    width: 334px;
+  }
 
-    color: #FCFCFC;
-
-    @include tablet {
-        text-align: left;
-        width: 357px;
-    }
-
-    @include desktop {
-        text-align: left;
-        width: 341px;
-    }
-
+  @include desktop {
+    @include font(400, 16, 1.75, 0.04);
+    margin-bottom: 8px;
+    margin-left: 32px;
+    text-align: left;
+    width: 463px;
+  }
 }
 
+// .text__item-2 {
+//   @include font(400, 12, 1.75, 0.04);
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 220px;
+//   margin-bottom: 4px;
+//   text-align: center;
+//   color: #fcfcfc;
+
+//   @include tablet {
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 334px;
+//     letter-spacing: 0.04em;
+//   }
+//   @include desktop {
+//     @include font(400, 16, 1.75, 0.04);
+//     margin-bottom: 8px;
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 463px;
+//   }
+// }
+
+// .text__item-3 {
+//   @include font(400, 12, 1.75, 0.04);
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 220px;
+//   text-align: center;
+//   color: #fcfcfc;
+
+//   @include tablet {
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 334px;
+//     margin-bottom: 8px;
+//     letter-spacing: 0.04em;
+//     }
+//     @include desktop {
+//     @include font(400, 16, 1.75, 0.04);
+//     margin-bottom: 8px;
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 463px;
+//   }
+// }
 
 .media {
-    @include tablet {
-        display: flex;
-        justify-content: space-between;
-    }
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    @include desktop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .image {
-    max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 
-    @include tablet {
-        margin-bottom: 48px;
-    }
+  @include tablet {
+    // margin-bottom: 48px;
+  }
 
-    @include desktop {
-        margin-bottom: 60px;
-    }
-
-    // & {
-    //     border-radius: 50%;
-    //     display: inline-block;
-    //     max-width: 100%;
-    //     position: relative;
-    //     z-index: 2;
-    //     top: 20px;
-    // }
+  @include desktop {
+    margin-bottom: 60px;
+  }
 }
-
-// .advantages__circle {
-//     width: 278px;
-//     height: 278px;
-//     position: relative;
-
-//     &::before {
-//         content: '';
-//         background-color: #F8D24E;
-//         border-radius: 50%;
-//         display: block;
-//         height: 100%;
-//         width: 100%;
-//         position: absolute;
-//         z-index: 1;
-//     }
-// }
-
-
 
 .up-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    text-transform: uppercase;
-
-    padding-bottom: 12px;
-
-    color: #FCFCFC;
+  @include font (700, 18, 1.22, 0.04);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #fcfcfc;
+  
+  @include tablet {
+    @include font(800, 22, 1.22, 0.04);
+  }
+  
+  @include desktop {
+    @include font(800, 30, 1.23, 0.04);
+  }
 }
 
-.title {    
-    
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    padding-bottom: 32px;
-
-    color: #FCFCFC;
-    
+.about-title {
+  font-family: 'Seymour One';
+  @include font(400, 30, 1.26, 0.04);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  color: #fcfcfc;
+  width: 200px;
+  @include tablet {
+    @include font(400, 34, 1.26, 0.06);
+    width: auto;
+    margin-bottom: 72px;
+  }
+  @include desktop {
+    @include font(400, 36, 1.25, 0.06);
+    width: auto;
+    margin-bottom: 72px;
+  }
 }
 
 .btn {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+  font-family: 'Montserrat';
+  @include font(600, 14, 1.28, 0.02);
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
 
-    display: flex;
-    align-items: center;
-    text-align: center;
+.abaut__btn-icon {
+  margin-left: 4px;
 
-    color: #131313;
+  .btn:focus & {
+    fill: #ffffff;
+  }
 }
 
 .design {
@@ -161,7 +208,9 @@
             background-color: #0A8817;
             transition-duration: 250ms;
         }
+
     }
+  }
 
     &:focus {
         @include desktop {
@@ -169,124 +218,125 @@
             color: #FCFCFC;
             transition-duration: 250ms;
         }
+
     }
+  }
 }
 
 .wraper {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  @include flex;
+
+  @include tablet {
     @include flex;
+    margin-bottom: 32px;
+  }
 
-    @include tablet {
-        @include flex;
-        margin-bottom: 32px;
-    }
-
-    @include desktop {
-        margin-bottom: 40px;
-    }
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .btn-flex {
-    @include flex;
+  @include flex;
 
-    @include tablet {
-        justify-content: flex-start;
-    }
-
-    @include desktop {
-        justify-content: flex-start;
-    }
+  @include largerThanMobile {
+    justify-content: flex-start;
+  }
 }
 
 .circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: #F8D24E;
-    border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f8d24e;
+  border-radius: 50%;
 }
 
 .cow::after {
-    content: url(/src/images/kow/cow.png);
+  content: url(/src/images/kow/cow.png);
 }
 
 .weight::after {
-    content: url(/src/images/kow/weight.png);
+  content: url(/src/images/kow/weight.png);
 }
 
 .icecrema:after {
-    content: url(/src/images/kow/icecrema.png);
+  content: url(/src/images/kow/icecrema.png);
 }
 
-
-
-
 .numbers {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+  font-family: 'Roboto';
+  @include font(700, 36, 1.17, 0.04);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #fcfcfc;
 
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  @include tablet {
+    font-family: 'Montserrat';
+    @include font(700, 48, 1.23, 0.04);
+    margin-bottom: 16px;
+  }
 
-    margin-bottom: 18px;
-
-    color: #FCFCFC;
+  @include desktop {
+    font-family: 'Montserrat';
+    @include font(700, 58, 1.22, 0.04);
+    margin-bottom: 16px;
+  }
 }
 
 .second-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 170%;
+  @include font(700, 12, 1.66, 0.04);
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fcfcfc;
 
-    text-align: center;
 
-    margin-bottom: 25px;
-
-    color: #FCFCFC;
-
-    @include tablet {
-        margin-bottom: 40px;
-    }
+  @include tablet {
+    @include font(400, 14, 1.71, 0.04);
+    width: 152px;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    @include font(400, 16, 1.71, 0.02);
+    width: 368px;
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__list {
-    list-style: none;
+  list-style: none;
 
-    @include tablet {
-        @include flex;
-    }
+  @include tablet {
+    @include flex;
+  }
 
-    @include desktop {
-        display: flex;
-    }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .advantages__item {
-    @include tablet {
-        margin-right: 80px;
-    }
+  @include tablet {
+    margin-right: 80px;
+  }
 
+  @include desktop {
+    margin-right: 32px;
+  }
+
+  &:last-child {
     @include desktop {
-        margin-right: 32px;
+      margin-right: 0;
     }
+  }
 
-    &:last-child {
-        @include desktop {
-            margin-right: 0;
-        }
+  &:last-child {
+    @include tablet {
+      margin-right: 0;
     }
-
-    &:last-child {
-        @include tablet {
-            margin-right: 0;
-        }
-    }
+  }
 }
