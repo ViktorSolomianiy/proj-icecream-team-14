@@ -152,4 +152,123 @@
     </ul>
   </div>
 </section>
+
+<!-- MODAL FORM -->
+<div class="bacdrop is-hidden" data-prod>
+  <div class="modal-pro">
+    <button type="button" class="modal-pro__btn-close btn" data-prod-close>
+      X
+    </button>
+
+    <h2 class="modal-pro__title">Chololate icecream</h2>
+    <div class="modal-pro__view">
+      <div class="modal-pro__container">
+        <picture>
+          <source
+            srcset="
+              ./images/products/modal-img-mob-1x-min.jpeg 1x,
+              ./images/products/modal-img-mob-2x-min.jpeg 2x
+            "
+            media="(min-width:1900px)"
+          />
+          <img
+            src="./images/products/modal-img-mob-1x-min.jpeg"
+            alt="ice cream"
+            class="modal-pro__img"
+          />
+        </picture>
+
+        <img
+          src="./images/products/eclipse-ic.svg"
+          alt="background"
+          width="131px"
+          height="131px"
+          class="modal-pro__img-bg"
+        />
+      </div>
+
+      <ul class="benefiit__list list">
+        <li class="benefit__item">
+          <span class="benefit__circle">320</span>
+          kcal
+        </li>
+        <li class="benefit__item">
+          <span class="benefit__circle">4g</span>
+          Prote...
+        </li>
+        <li class="benefit__item">
+          <span class="benefit__circle">8,2g</span>
+          Fats
+        </li>
+        <li class="benefit__item">
+          <span class="benefit__circle">40,4g</span>
+          Carbs
+        </li>
+      </ul>
+    </div>
+    <div class="ingredients">
+      <h3 class="ingredients__title">Ingredients</h3>
+      <ul class="ingredients__list list">
+        <li class="ingredients__item">
+          <p class="text">Milk</p>
+          <p class="text">100ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="text">Belgian chocolate</p>
+          <p class="text">20g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="text">Cream</p>
+          <p class="text">150ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="text">Cocoa powder</p>
+          <p class="text">30g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="text">Sugar</p>
+          <p class="text">40g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="text">Vanilla sugar</p>
+          <p class="text">10g</p>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-pro-input input">
+      <ul class="input__list list">
+        <li class="input__item">
+          <input
+            type="text"
+            class="input__form"
+            name="user-name"
+            required
+            id="user-name"
+            placeholder="Name"
+          />
+        </li>
+        <li class="input__item">
+          <input
+            type="tel"
+            class="input__form"
+            name="user-tel"
+            required
+            minlength="10"
+            id="user-tel"
+            placeholder="Phone"
+          />
+        </li>
+      </ul>
+      <div class="coment">
+        <textarea
+          class="coment__input"
+          name="user__coment"
+          id=""
+          placeholder="Comment"
+        ></textarea>
+        <button type="submit" class="input__btn btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="./js/products.js"></script>
