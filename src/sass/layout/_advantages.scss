@@ -198,12 +198,19 @@
     margin-top: 48px;
   }
 
-  &:hover,
+  &:hover {
+    @include desktop {
+      background-color: #0a8817;
+      transition-duration: 250ms;
+    }
+  }
+
   &:focus {
     @include desktop {
       background-color: #0a8817;
       transition-duration: 250ms;
       color: #fcfcfc;
+      fill: #fcfcfc;
     }
   }
 }
