@@ -1,35 +1,149 @@
 <!-- PRODUCTS -->
 <section class="products">
-  <div class="products__container">
-    <h1 class="container__title" id="toproducts">
-      <span class="product__accent">100% natural</span> products
-    </h1>
-    <ul class="products__list list">
-      <li class="products__item" id="toinform">
-        <picture>
-          <source
-            srcset="
-              ./images/products/ice-cre-des-1x-min.jpeg 1x,
-              ./images/products/ice-cre-des-2x-min.jpeg 2x
-            "
-            media="(max-width:1200px)"
-          />
-          <source
-            srcset="
-              ./images/products/ice-cream-1x-min.jpeg 1x,
-              ./images/products/ice-crema-2x-min.jpeg 2x
-            "
-            media="(min-width:1199px)"
-          />
-          <img
-            src="./images/products/ice-cream-1x-min.jpeg"
-            width="200px"
-            height="200px"
-            alt="ice-crema"
-            class="products__img"
-          />
-        </picture>
 
+    <div class="products__container">
+        <h1 class="container__title"><span class="product__accent">100% natural</span> products</h1>
+        <ul class="products__list list">
+            <li class="products__item">
+                <picture>
+                    <source 
+                        srcset="
+                            ./images/products/ice-cre-des-1x-min.jpeg 1x,
+                            ./images/products/ice-cre-des-2x-min.jpeg 2x"
+                        media="(max-width:1200px)"
+                    >
+                    <source 
+                        srcset="
+                            ./images/products/ice-cream-1x-min.jpeg 1x,
+                            ./images/products/ice-crema-2x-min.jpeg 2x"
+                        media="(min-width:1199px)"
+                    >
+                    <img 
+                        src="./images/products/ice-cream-1x-min.jpeg" 
+                        width="200" 
+                        height="200" 
+                        alt="ice-crema" 
+                        class="products__img"
+                    >
+                </picture>
+                
+                <img 
+                    src="./images/products/eclipse-ic.svg" 
+                    width="200" 
+                    height="200" 
+                    alt="ice-crema" 
+                    class="products__img-bg ice-cre"
+                >
+                <div class="product__content  ice-cream">
+                    <div class="products__content-place">
+                        <h2 class="products__title"> ice cream</h2>
+                        <p class="products__text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
+                            stabilizer</p>
+                    </div>
+                    
+                    <button class="products__btn btn" data-prod-open>
+                        <svg class="products__arrow def" width="40" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow1"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+            </li>
+            <li class="products__item">
+                <picture>
+                    <source 
+                        srcset="
+                            ./images/products/ice-co-des-1x-min.jpeg 1x,
+                            ./images/products/ice-co-des-2x-min.jpeg 2x"
+                        media="(max-width:1200px)"
+                    >
+                    <source 
+                        srcset="
+                            ./images/products/ice-coffee-1x-min.jpeg 1x,
+                            ./images/products/ice-coffee-2x-min.jpeg 2x"
+                        media="(min-width:1199px)"
+                    >
+                    <img 
+                        src="./images/products/ice-coffee-1x-min.jpeg" 
+                        width="200" 
+                        height="200" 
+                        alt="ice-coffee" 
+                        class="products__img"
+                    >
+                </picture>
+                
+                <img 
+                    src="./images/products/ellipse-ic-co.svg" 
+                    width="200" 
+                    height="200" 
+                    alt="ice-crema" 
+                    class="products__img-bg ice-co"
+                >
+                <div class="product__content ice-coffee">
+                    <div class="products__content-place">
+                        <h2 class="products__title">ice coffee</h2>
+                        <p class="products__text">Fragrant invigorating drink created from 100% natural ingredients without the
+                            use of
+                            preservatives and flavor enhancers</p>
+                    </div>
+                    
+                    <button class="products__btn btn" data-prod-opens>
+                        <svg class="products__arrow def" width="40" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow1"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+            </li>
+            <li class="products__item">
+                <picture>
+                    <source 
+                        srcset="
+                            ./images/products/milksh-des-1x-min.jpeg 1x,
+                            ./images/products/milksh-des-2x-min.jpeg 2x"
+                        media="(max-width:1200)"
+                    >
+                    <source 
+                        srcset="
+                            ./images/products/milkshakes-1x-min.jpeg 1x,
+                            ./images/products/milkshakes-2x-min.jpeg 2x"
+                        media="(min-width:1199"
+                    >
+                    <img 
+                        src="./images/products/milkshakes-1x-min.jpeg" 
+                        width="200" 
+                        height="200" 
+                        alt="milkshakes" 
+                        class="products__img"
+                    >
+                </picture>
+                
+                <img 
+                    src="./images/products/ellipse-mil.svg" 
+                    width="200px" 
+                    height="200px" 
+                    alt="ice-crema" 
+                    class="products__img-bg mil"
+                >
+                <div class="product__content milkshakes">
+                    <div class="products__content-place">
+                        <h2 class="products__title">milkshakes</h2>
+                        <p class="products__text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
+                            berries
+                            and other sweets of your choice</p>
+                    </div>
+                    
+                    <button class="products__btn btn" data-prod-openss>
+                        <svg class="products__arrow def" width="40" height="">
+                            <use href="./images/products/symbol.svg#icon-arrow1"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+</section>
         <img
           src="./images/products/eclipse-ic.svg"
           width="200px"
@@ -94,11 +208,40 @@
             </p>
           </div>
 
+                <img 
+                src="./images/products/eclipse-ic.svg" 
+                alt="background" 
+                width="131" 
+                height="131" 
+                class="modal-pro__img-bg"
+                >
+            </div>
+            
+            <ul class="benefiit__list list">
+                <li class="benefit__item">
+                    <span class="benefit__circle">320</span>
+                    kcal
+                </li>
+                <li class="benefit__item">
+                    <span class="benefit__circle">4g</span>
+                    Prote...
+                </li>
+                <li class="benefit__item">
+                    <span class="benefit__circle">8,2g</span>
+                    Fats
+                </li>
+                <li class="benefit__item">
+                    <span class="benefit__circle">40,4g</span>
+                    Carbs
+                </li>
+            </ul>
+
           <button class="products__btn btn" data-prod-opens>
             <svg class="products__arrow def" width="40px" height="">
               <use href="./images/products/symbol.svg#icon-arrow1"></use>
             </svg>
           </button>
+
         </div>
       </li>
       <li class="products__item">
