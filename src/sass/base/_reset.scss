@@ -20,13 +20,17 @@ img {
 }
 
 button {
-  cursor: pointer;
+  cursor: url('../images/header-hero/cursor.cur'), auto;
   border: none;
   margin: none;
 }
 
 address {
   font-style: normal;
+}
+
+.backdrop {
+  z-index: 10;
 }
 
 .link {
