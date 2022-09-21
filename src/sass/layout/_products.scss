@@ -19,14 +19,12 @@
     align-items: center;
     justify-content: center;
   };
-
-}
-
-.products__container {
   padding: 60px 20px;
+
   @include tablet {
     padding: 60px 20px 82px;
   };
+
   @include desktop {
     padding: 60px 12px 57px;
   }
@@ -261,6 +259,7 @@
     &:focus{
       width: 50px;
     }
+    
 }
 
 .foc,
@@ -282,6 +281,9 @@
       rgba(47, 48, 58, 0.4));
   z-index: 6;
   overflow-y: scroll;
+  
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal-pro {
@@ -295,7 +297,6 @@
 
   z-index: 6;
   width: 280px;
-  // height: 990px;
 
   padding: 28px 20px 32px;
 
@@ -304,19 +305,16 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   
-
-  
+    
 
   @include tablet {
     width: 568px;
-    // height: 995px;
 
     padding: 32px 40px;
   }
 
   @include desktop {
     width: 568px;
-    // height: 995px;
 
     padding: 32px 40px;
   }
@@ -326,7 +324,6 @@
   opacity: 0;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-pro__btn-close {
@@ -340,6 +337,7 @@
   @include desktop {
     top: 20px;
   }
+  
 }
 
 .modal-pro__title {
