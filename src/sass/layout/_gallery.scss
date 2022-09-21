@@ -4,14 +4,15 @@
 
   .slider {
     position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .slides {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 279px;
-    max-height: 131px;
+    max-width: 420px;
     width: 100%;
     position: relative;
     overflow: hidden;
