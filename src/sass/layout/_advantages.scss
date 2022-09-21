@@ -3,6 +3,7 @@
   padding-top: 60px;
   padding-bottom: 180px;
 }
+
 .advantages__flex {
   display: flex;
   flex-direction: column;
@@ -176,8 +177,6 @@
   align-items: center;
   text-align: center;
   color: #131313;
-  & :focus{
-  fill: #ffffff;
 }
 
 .abaut__btn-icon {
@@ -204,6 +203,7 @@
     @include desktop {
       background-color: #0a8817;
       transition-duration: 250ms;
+      color: #fcfcfc;
     }
   }
 }
