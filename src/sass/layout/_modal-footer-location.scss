@@ -50,12 +50,14 @@
     }
 
     &__map {
-        max-width:224px ;
-        max-height: 200px;
-
-        @include largerThanMobile {
-        min-width: 448px;
-        min-height: 260px;
+        iframe {
+          width:224px ;
+          height: 200px;
+  
+          @include largerThanMobile {
+          width: 448px;
+          height: 260px;
+          }
         }
     }
 
