@@ -4,13 +4,14 @@
   padding-bottom: 180px;
 }
 .advantages__flex {
-  @media screen and (max-width: 767px) {
-  }
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 767px) {
+  }
 }
+
 .text__list {
   padding-top: 40px;
 
@@ -21,12 +22,17 @@
   }
 
   @include desktop {
-    width: 463px;
-    margin-left: 100px;
+    width: 563px;
+    margin: 0 auto;
+
+    // width: 463px;
+    // margin-left: 100px;
   }
 }
 
-.text__item-1 {
+.text__item-1,
+.text__item-2,
+.text__item-3 {
   @include font(400, 12, 1.75, 0.04);
   margin-left: auto;
   margin-right: auto;
@@ -43,28 +49,61 @@
   }
 
   @include desktop {
-    text-align: left;
-    width: 341px;
-  }
-}
-
-.text__item-2 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 220px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.58;
-  text-align: center;
-  color: #fcfcfc;
-
-  @include tablet {
+    @include font(400, 16, 1.75, 0.04);
+    margin-bottom: 8px;
     margin-left: 32px;
     text-align: left;
-    width: 334px;
-    letter-spacing: 0.04em;
+    width: 463px;
   }
 }
+
+// .text__item-2 {
+//   @include font(400, 12, 1.75, 0.04);
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 220px;
+//   margin-bottom: 4px;
+//   text-align: center;
+//   color: #fcfcfc;
+
+//   @include tablet {
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 334px;
+//     letter-spacing: 0.04em;
+//   }
+//   @include desktop {
+//     @include font(400, 16, 1.75, 0.04);
+//     margin-bottom: 8px;
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 463px;
+//   }
+// }
+
+// .text__item-3 {
+//   @include font(400, 12, 1.75, 0.04);
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 220px;
+//   text-align: center;
+//   color: #fcfcfc;
+
+//   @include tablet {
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 334px;
+//     margin-bottom: 8px;
+//     letter-spacing: 0.04em;
+//     }
+//     @include desktop {
+//     @include font(400, 16, 1.75, 0.04);
+//     margin-bottom: 8px;
+//     margin-left: 32px;
+//     text-align: left;
+//     width: 463px;
+//   }
+// }
 
 .media {
   @include tablet {
@@ -102,20 +141,31 @@
   text-transform: uppercase;
   margin-bottom: 12px;
   color: #fcfcfc;
+  @include tablet {
+    @include font(800, 22, 1.22, 0.04);
+    }
+  @include desktop {
+  @include font(800, 30, 1.23, 0.04);
+    }
 }
 
 .about-title {
+  font-family: 'Seymour One';
+  @include font(400, 30, 1.26, 0.04);
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
-  font-family: 'Seymour One';
-  @include font(400, 30, 1.27, 0.04);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 32px;
   color: #fcfcfc;
-
+  width: 200px;
   @include tablet {
+    @include font(400, 34, 1.26, 0.06);
+    width: auto;
+    margin-bottom: 72px;
+  }
+  @include desktop {
+    @include font(400, 36, 1.25, 0.06);
     width: auto;
     margin-bottom: 72px;
   }
@@ -130,24 +180,29 @@
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #131313;
+}
+
+.abaut__btn-icon{
+  margin-left: 4px;
 }
 
 .design {
   background: #f8d24e;
   border-radius: 10px;
-  padding-top: 12px;
-  padding-right: 30px;
-  padding-bottom: 12px;
-  padding-left: 34px;
-
+  padding: 12px 34px;
   margin-top: 20px;
   margin-bottom: 42px;
 
   @include tablet {
     margin-top: 48px;
     margin-bottom: 53px;
+    margin-left: 32px;
+  }
+  @include desktop {
+    margin-top: 48px;
+    margin-bottom: 152px;
+    margin-left: 32px;
   }
 
   &:hover {
@@ -234,19 +289,21 @@
 }
 
 .second-text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.67;
+  @include font(700, 12, 1.66, 0.04);
   text-align: center;
   margin-bottom: 25px;
   color: #fcfcfc;
 
+
   @include tablet {
+    @include font(400, 14, 1.71, 0.04);
     width: 152px;
     margin-bottom: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+  }
+  @include desktop {
+    @include font(400, 16, 1.71, 0.02);
+    width: 368px;
+    margin-bottom: 40px;
   }
 }
 
