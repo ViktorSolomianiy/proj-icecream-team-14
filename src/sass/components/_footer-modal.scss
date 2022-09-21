@@ -1,214 +1,146 @@
-.franchise-modal{
+.franchise {
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 674px;
-    width: 90%;
-    max-width: 280px;
-    padding: 28px 30px 28px 29px;
-    background: #FCFCFC;
+    
+    min-height: 674px;
+    min-width: 280px;
+    padding: 28px;
+    
+    background-color: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
-     @include tablet{
-        min-height: 668px;
-        max-width: 568px; 
-        padding: 32px 60px;
+    
+    @include largerThanMobile {
+        width: 568px;
+        height: 668px;
+        padding: 30px 58px;
     }
-    @include desktop{
-        max-width: 568px;
-        min-height: 668px;
-        padding: 32px 60px;
-    }
-}
 
-.franchise-modal__btn-close{
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-    cursor: pointer;
-    @include tablet{
-        top: 20px;
-        right: 20px;
+    &__btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 16px;
+        height: 16px;
+        background-color: transparent;
+        cursor: pointer;
+       
+        @include largerThanMobile {
+            top: 25px;
+            right: 25px;
+        }
     }
-    @include desktop{
-        top: 20px;
-        right: 20px;
-    }
-}
 
-.modal__close-icon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    @include tablet{
-        width: 20px;
-        height: 20px;
-    }
-    @include desktop{
-        width: 20px;
-        height: 20px;
-    }
-}
-
-.franchise-modal__title{
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    width: 221px;
-    height: 72px;
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
-    margin-bottom: 20px;
-    @include tablet{
-        font-size: 20px;
-        line-height: 1.4; 
-        margin-bottom: 24px; 
-        width: 322px;
-        height: 84px;
-        margin: 0 auto;
-        text-align: center;
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         
+        @include largerThanMobile {
+            width: 20px;
+            height: 20px;
+        }
     }
-    @include desktop{
-        font-size: 20px;
-        line-height: 1.4;  
+
+    &__title {
+        font-family: 'Seymour One';
+        @include font (400, 16, 1.5, 0.02);
+
+        text-align: center;
+        align-items: center;
+        color: #131313;
+        margin-bottom: 20px;
+
+        @include largerThanMobile {
+            width: 332px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+            @include font (400, 20, 1.4, 0.02);
+        }
+    }
+
+    &__text {
+        @include font (400, 14, 1.4, 0.02);
+        color: #131313;
         margin-bottom: 24px;
-        width: 322px;
-        height: 84px;
-        margin: 0 auto;
-        text-align: center;
         
+        @include largerThanMobile {
+            @include font (400, 16, 1.4, 0);
+            margin-bottom: 32px;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        background-color: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        padding: 8px 0px 8px 12px;
+        margin-bottom: 12px;
+        
+        @include font (400, 12, 1.41, 0.02);
+        color: #131313;
+
+        @include largerThanMobile {
+        width: 368px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        padding: 11px 0px 11px 16px;
+        }
+    }
+
+    &__feedback {
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        resize: none;
+        width: 100%;
+        padding: 8px 0px 39px 12px;
+        margin-bottom: 24px;
+       
+        @include font (400, 12, 1.41, 0.02);
+        color: #131313;
+
+        @include largerThanMobile {
+            width: 368px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+        }
+    }
+    
+    &__send-btn {
+        margin-left: auto;
+        margin-right: auto;
+        
+        @include font (600, 12, 1.25, 0.02);
+        color: #131313;
+        
+        background-color: #F8D24E;
+        border-radius: 10px;
+        padding: 12px 34px;
+        cursor: pointer;
+        border-color: transparent;  
     }
 }
 
-
-.franchise-modal__text{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #131313;
-    margin-bottom: 24px;
-    width: 222px;
-    height: 240px;
-    @include tablet{
-        font-size: 16px;
-        line-height: 1.37;
-        width: 448px;
-        height: 132px;
-        margin-bottom: 32px;
-        margin-top: 24px;
-    }
-    @include desktop{
-        font-size: 16px;
-        line-height: 1.37;
-        width: 448px;
-        height: 132px;
-        margin-bottom: 32px;
-        margin-top: 24px;
-}
-}
-.backdrop.is-hidden{
+.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    } 
-
-.franchise-modal__form-input{
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    width: 224px;
-    height: 32px;
-    padding: 8px 0px 7px 12px;
-    margin-bottom: 12px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 12px;
-    line-height:1.41;
-    color: #131313;
-    @include tablet{
-        width: 368px;
-        height: 42px;
-        padding: 11px 0px 11px 16px; 
-        margin-bottom: 16px;
-        font-size: 14px;
-        line-height:1.42;
-        color: #131313;
-    }
-    @include desktop{
-        width: 368px;
-        height: 42px;
-        padding: 11px 0px 11px 16px; 
-        margin-bottom: 16px;
-        font-size: 14px;
-        line-height:1.42;
-        color: #131313;
-    }
-}
-
-.franchise-modal__feedback-form{
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    resize: none;
-    height: 64px;
-    width: 224px;
-    padding: 8px 0px 39px 12px;
-    margin-bottom: 24px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 12px;
-    @include tablet{
-        width: 368px;
-        height: 84px;
-        padding: 11px 0px 53px 16px;
-        margin-bottom: 32px;
-        font-size: 14px;
-    }
-    @include desktop{
-        width: 368px;
-        height: 84px;
-        padding: 11px 0px 53px 16px;
-        margin-bottom: 32px;
-        font-size: 14px;
-    }
-}
-
-
-.franchise-modal__send-btn{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    color: #131313;
-    background: #F8D24E;
-    border-radius: 10px;
-    padding: 12px 34px;
-    cursor: pointer;
-    border-color: transparent;
-    @include tablet{
-        font-size: 14px;
-        line-height: 1.21;  
-    }
-    @include desktop{
-        font-size: 14px;
-        line-height: 1.21;  
-    }
-}
-
-
-
-
-   
-
-
+} 
 
