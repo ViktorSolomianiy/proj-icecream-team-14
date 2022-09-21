@@ -133,20 +133,19 @@
 }
 
 .up-title {
-  @include font(700, 18, 1.22, 0.04);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  @include font (700, 18, 1.22, 0.04);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 12px;
   color: #fcfcfc;
+  
   @include tablet {
     @include font(800, 22, 1.22, 0.04);
-    }
+  }
+  
   @include desktop {
-  @include font(800, 30, 1.23, 0.04);
-    }
+    @include font(800, 30, 1.23, 0.04);
+  }
 }
 
 .about-title {
@@ -173,18 +172,20 @@
 
 .btn {
   font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(600, 14, 1.28, 0.02);
+  
   display: flex;
   align-items: center;
   text-align: center;
   color: #131313;
 }
 
-.abaut__btn-icon{
+.abaut__btn-icon {
   margin-left: 4px;
+
+  .btn:focus & {
+    fill: #ffffff;
+  }
 }
 
 .design {
@@ -199,6 +200,7 @@
     margin-bottom: 53px;
     margin-left: 32px;
   }
+  
   @include desktop {
     margin-top: 48px;
     margin-bottom: 152px;
@@ -236,11 +238,7 @@
 .btn-flex {
   @include flex;
 
-  @include tablet {
-    justify-content: flex-start;
-  }
-
-  @include desktop {
+  @include largerThanMobile {
     justify-content: flex-start;
   }
 }
