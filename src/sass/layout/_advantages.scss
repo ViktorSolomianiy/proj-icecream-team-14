@@ -189,34 +189,36 @@
 }
 
 .design {
-  background: #f8d24e;
-  border-radius: 10px;
-  padding: 12px 34px;
-  margin-top: 20px;
-  margin-bottom: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-left: 34px;
 
-  @include tablet {
-    margin-top: 48px;
-    margin-bottom: 53px;
-    margin-left: 32px;
-  }
-  
-  @include desktop {
-    margin-top: 48px;
-    margin-bottom: 152px;
-    margin-left: 32px;
-  }
+    margin-top: 20px;
+    margin-bottom: 42px;
 
-  &:hover {
-    @include desktop {
-      background-color: #0a8817;
+    @include tablet {
+        margin-top: 48px;
+    }
+
+    &:hover {
+        @include desktop {
+            background-color: #0A8817;
+            transition-duration: 250ms;
+        }
+
     }
   }
 
-  &:focus {
-    @include desktop {
-      background-color: #0a8817;
-      color: #fcfcfc;
+    &:focus {
+        @include desktop {
+            background-color: #0A8817;
+            color: #FCFCFC;
+            transition-duration: 250ms;
+        }
+
     }
   }
 }
