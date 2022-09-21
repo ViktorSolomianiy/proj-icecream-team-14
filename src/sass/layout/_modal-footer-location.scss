@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     gap: 22px;
-    z-index: 20;
+    z-index: 5;
     position: absolute;
     min-width: 280px;
     min-height: 365px;
@@ -62,13 +62,11 @@
     &__title {
         font-family: 'Seymour One';
         @include font(400, 16, 1.5, 0.03);
-    
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    color: #131313;
-    }
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #131313;
+        }
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0);
