@@ -29,6 +29,10 @@ address {
   font-style: normal;
 }
 
+.backdrop {
+  z-index: 10;
+}
+
 .link {
   text-decoration: none;
 }
