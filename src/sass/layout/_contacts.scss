@@ -1,33 +1,48 @@
 .contacts { 
     background-color: #84A178;
-    
+    height: 1062px;
     @include tablet {
-        height: 252px;
+        height: 326px;
     }
     
     @include desktop {
-        height: 474px;     
+        height: 548px;     
     }
 
     &__container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        height: 930px;
         top: -345px;
         position: relative;
-        
+
         @include tablet {
-           gap: 16px;
-           height: 528px;
-           top: -304px;
+            top: -304px;
         }
-        
+
         @include desktop {
-            gap: 32px;
-            height: 538px;
             top: -96px;
         }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 32px;
+
+        @include tablet {
+           flex-direction: row;
+            gap: 16px;
+            padding-bottom: 60px;
+            
+         }
+         
+         @include desktop {
+            flex-direction: row;
+             gap: 32px;
+             height: 538px;
+             top: -96px;
+         }
     }
 
     &__info {
@@ -82,151 +97,203 @@
             margin-bottom: 32px;
         }
     }
-}
 
-
-.contacts__city {
-    @include font(500, 12, 1.83, 0.04);
-    color: #131313;
-    margin-bottom: 8px;
-    
-    @include tablet{
-        @include font(500, 14, 1.85, 0.04);
-        margin-bottom: 12px;
-    }
-    
-    @include desktop{
-        @include font(500, 16, 1.87, 0.04);
+    &__city {
+        @include font(500, 12, 1.83, 0.04);
+        color: #131313;
         margin-bottom: 8px;
+        
+        @include tablet{
+            @include font(500, 14, 1.85, 0.04);
+            margin-bottom: 12px;
+        }
+        
+        @include desktop{
+            @include font(500, 16, 1.87, 0.04);
+            margin-bottom: 8px;
+        }
     }
-}
 
-.contacts__adress {
-    @include font(500, 12, 1.83, 0.04);
-    color: #D6936D;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E1E1E1;
-    
-    @include tablet{
-        @include font(500, 14, 1.85, 0.04); 
-        padding-bottom: 26px;
+    &__adress {
+        @include font(500, 12, 1.83, 0.04);
+        color: #D6936D;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+        
+        @include tablet{
+            @include font(500, 14, 1.85, 0.04); 
+            padding-bottom: 26px;
+        }
+        
+        @include desktop{
+            @include font(500, 16, 1.81, 0.04); 
+            padding-bottom: 32px;
+        }
     }
-    
-    @include desktop{
-        @include font(500, 16, 1.81, 0.04); 
-        padding-bottom: 32px;
-    }
-}
 
-.contacts__worktime {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E1E1E1;
-    @include tablet {
-        padding-top: 32px;
-        padding-bottom: 32px;
+    &__worktime {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+        @include tablet {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+        @include desktop {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
-    @include desktop {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-}
 
-.contacts__workdays {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    color: #131313;
-    
-    @include tablet {
-        font-size: 14px;
-        line-height: 1.85;
+    &__workdays {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        color: #131313;
+        
+        @include tablet {
+            font-size: 14px;
+            line-height: 1.85;
+        }
+        
+        @include desktop {
+            font-size: 16px;
+            line-height: 1.87;
+        }
     }
-    
-    @include desktop {
-        font-size: 16px;
-        line-height: 1.87;
-    }
-}
-.contacts__workhours {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    color: #ABABAB;
-    
-    @include tablet {
-        font-size: 14px;
-        line-height: 1.85; 
-    }
-    
-    @include desktop {
-        font-size: 16px;
-        line-height: 1.87; 
-    }
-}
-.contacts__workhours:not(:last-child){
-    margin-bottom: 8px;
-    
-    @include tablet{
-        margin-bottom: 12px;
-    }
-    @include desktop{
-        margin-bottom: 12px;
-    }
-}
 
-.contacts__list{
-    margin-top: 24px;
-    
-    @include tablet{
-        margin-top: 32px;
+    &__workhours {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        color: #ABABAB;
+        
+        @include tablet {
+            font-size: 14px;
+            line-height: 1.85; 
+        }
+        
+        @include desktop {
+            font-size: 16px;
+            line-height: 1.87; 
+        }
     }
-    
-    @include desktop{
-        margin-top: 32px;
-    }
-}
-.contacts__mail{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #131313;
-    
-    @include tablet{
-        font-size: 14px;
-        line-height: 1.85;  
-    }
-    
-    @include desktop{
-        font-size: 16px;
-        line-height: 1.81;  
-    }
-}
 
-.contacts__tel{
-    @include font(500, 12, 1.5, 0.04); 
-    color: #131313;
-    
-    @include tablet {
-        font-size: 14px;
-        line-height: 1.85;  
+    &__workhours:not(:last-child) {
+        margin-bottom: 8px;
+        
+        @include largerThanMobile {
+            margin-bottom: 12px;
+        }
     }
-    @include desktop {
-        font-size: 16px;
-        line-height: 1.81;  
-    }
-}
 
-.contacts__container {
-    @include tablet {
+    &__list {
+        margin-top: 24px;
+        
+        @include largerThanMobile {
+            margin-top: 32px;
+        }
+    }
+
+    &__mail {
+        @include font(500, 12, 1.5, 0.04); 
+        color: #131313;
+        
+        @include tablet{
+            font-size: 14px;
+            line-height: 1.85;  
+        }
+        
+        @include desktop{
+            font-size: 16px;
+            line-height: 1.81;  
+        }
+    }
+
+    &__tel {
+        @include font(500, 12, 1.5, 0.04); 
+        color: #131313;
+        
+        @include tablet {
+            font-size: 14px;
+            line-height: 1.85;  
+        }
+        @include desktop {
+            font-size: 16px;
+            line-height: 1.81;  
+        }
+    }
+
+    &__buttons {
         display: flex;
-        flex-direction: row;
-        gap: 16px; 
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 16px;
+    
+        @include largerThanMobile {
+            flex-direction: row;
+        }
     }
-    @include desktop{
+
+    &__btn {
         display: flex;
-        flex-direction: row;
-        gap: 32px; 
+        width: 196px;
+        height: 42px;
+        gap: 6px;
+
+        @include font(600, 14, 1.29, 0.03);
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #131313;
+        border-radius: 10px;
+    }
+
+    &__locations__btn {
+        background-color: #F8D24E;
+        transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+        background-color: #0A8817;
+        transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:focus {
+            color: #FCFCFC; 
+            transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__franchise__btn {
+        background-color: transparent;
+        border: 2px solid #F8D24E;
+        transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            border: 2px solid #0A8817;
+            transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);   
+        }
+        
+        &:focus {
+            color: #FCFCFC; 
+            transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__icon {
+        stroke: currentColor;
+        transition: stroke 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__container {
+        @include desktop{
+            display: flex;
+            gap: 64px; 
+        }
     }
 }
 
