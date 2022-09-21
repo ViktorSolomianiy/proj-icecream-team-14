@@ -159,13 +159,15 @@
     &:hover {
         @include desktop {
             background-color: #0A8817;
+            transition-duration: 250ms;
         }
     }
 
     &:focus {
         @include desktop {
             background-color: #0A8817;
-            color: #FCFCFC
+            color: #FCFCFC;
+            transition-duration: 250ms;
         }
     }
 }
