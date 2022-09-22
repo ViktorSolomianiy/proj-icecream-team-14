@@ -1,11 +1,11 @@
 <!-- PRODUCTS -->
 <section class="products">
   <div class="products__container">
-    <h1 class="container__title" id="toproducts">
+    <h1 class="products__title" id="toproducts">
       <span class="product__accent">100% natural</span> products
     </h1>
-    <ul class="products__list list">
-      <li class="products__item" id="toinform">
+    <ul class="cards list">
+      <li class="cards__item" id="toinform">
         <picture>
           <source
             srcset="
@@ -26,34 +26,33 @@
             width="200"
             height="200"
             alt="ice-crema"
-            class="products__img"
+            class="cards__img"
           />
         </picture>
-
         <img
           src="./images/products/eclipse-ic.svg"
           width="200"
           height="200"
           alt="ice-crema"
-          class="products__img-bg ice-cre"
+          class="cards__img-bg cards__img-bg--ice-cre"
         />
-        <div class="product__content ice-cream">
-          <div class="products__content-place">
-            <h2 class="products__title">ice cream</h2>
-            <p class="products__text">
+        <div class="cards__content cards__content--color-green">
+          <div class="cards__content-place">
+            <h2 class="cards__title">ice cream</h2>
+            <p class="cards__text">
               Soft ice cream with a delicate taste. Made with milk, cream, sugar
               and natural stabilizer
             </p>
           </div>
 
-          <button class="products__btn btn" data-prod-open>
-            <svg class="products__arrow def" width="40" height="">
+          <button class="cards__btn" data-prod-open>
+            <svg class="cards__arrow" width="40" height="">
               <use href="./images/products/symbol.svg#icon-arrow1"></use>
             </svg>
           </button>
         </div>
       </li>
-      <li class="products__item">
+      <li class="cards__item">
         <picture>
           <source
             srcset="
@@ -74,7 +73,7 @@
             width="200"
             height="200"
             alt="ice-coffee"
-            class="products__img"
+            class="cards__img"
           />
         </picture>
 
@@ -83,25 +82,25 @@
           width="200"
           height="200"
           alt="ice-crema"
-          class="products__img-bg ice-co"
+          class="cards__img-bg cards__img-bg--ice-co"
         />
-        <div class="product__content ice-coffee">
-          <div class="products__content-place">
-            <h2 class="products__title">ice coffee</h2>
-            <p class="products__text">
+        <div class="cards__content cards__content--color-yellow">
+          <div class="cards__content-place">
+            <h2 class="cards__title">ice coffee</h2>
+            <p class="cards__text">
               Fragrant invigorating drink created from 100% natural ingredients
               without the use of preservatives and flavor enhancers
             </p>
           </div>
 
-          <button class="products__btn btn" data-prod-opens>
-            <svg class="products__arrow def" width="40" height="">
+          <button class="cards__btn" data-prod-opens>
+            <svg class="cards__arrow" width="40" height="">
               <use href="./images/products/symbol.svg#icon-arrow1"></use>
             </svg>
           </button>
         </div>
       </li>
-      <li class="products__item">
+      <li class="cards__item">
         <picture>
           <source
             srcset="
@@ -122,7 +121,7 @@
             width="200"
             height="200"
             alt="milkshakes"
-            class="products__img"
+            class="cards__img"
           />
         </picture>
 
@@ -131,19 +130,19 @@
           width="200px"
           height="200px"
           alt="ice-crema"
-          class="products__img-bg mil"
+          class="cards__img-bg cards__img-bg--mil"
         />
-        <div class="product__content milkshakes">
-          <div class="products__content-place">
-            <h2 class="products__title">milkshakes</h2>
-            <p class="products__text">
+        <div class="cards__content cards__content--color-brown">
+          <div class="cards__content-place">
+            <h2 class="cards__title">milkshakes</h2>
+            <p class="cards__text">
               Sweet drinks based on milk and ice cream, supplemented with
               syrups, fruits, berries and other sweets of your choice
             </p>
           </div>
 
-          <button class="products__btn btn" data-prod-openss>
-            <svg class="products__arrow def" width="40" height="">
+          <button class="cards__btn" data-prod-openss>
+            <svg class="cards__arrow" width="40" height="">
               <use href="./images/products/symbol.svg#icon-arrow1"></use>
             </svg>
           </button>
@@ -157,7 +156,9 @@
 <div class="bacdrop is-hidden" data-prod>
   <div class="modal-pro">
     <button type="button" class="modal-pro__btn-close btn" data-prod-close>
-      X
+      <svg class="franchise__icon icon-close-btn" width="16" height="16">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
     </button>
 
     <h2 class="modal-pro__title">Chololate icecream</h2>
