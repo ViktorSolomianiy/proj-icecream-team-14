@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
     <section class="advantages">
       <div class="container">
         <h1 class="hidden-title visually-hidden">Advantages</h1>
@@ -136,23 +127,3 @@
           foam-like texture, further softening the mixture.
         </p>
       </div>
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          modal: document.querySelector('[data-modal]'),
-          body: document.querySelector('body'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
-          refs.body.classList.toggle('no-scroll');
-        }
-      })();
-    </script>
-  </body>
-</html>
