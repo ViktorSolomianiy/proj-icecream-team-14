@@ -2,7 +2,6 @@
 @import './utiles/mixin';
 
 @import './common';
-@import './example';
 
 @import './base/base';
 @import './base/reset';
@@ -10,15 +9,14 @@
 @import './components/backdrop';
 @import './components/btn';
 
-@import './components/footer-modal';
-@import './layout/products';
-@import './layout/customers';
-@import './layout/abaut';
-@import './layout/footer';
-@import './layout/modal-footer-location';
 @import './layout/header';
 @import './layout/modal-header';
-@import './layout/contacts';
-@import './layout/gallery';
+@import './layout/products';
+@import './layout/about';
 @import './layout/advantages';
-
+@import './layout/gallery';
+@import './layout/customers';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/modal-footer-location';
+@import './layout/footer-modal';

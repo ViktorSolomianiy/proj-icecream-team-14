@@ -1,10 +1,8 @@
-
 <div class="backdrop is-hidden" data-franchise>
   <div class="franchise">
-    <button
-      type="button" class="franchise__btn" data-franchise-close>
-      <svg class="franchise__icon" width="16" height="16">
-        <use href="./images/icons.svg#franchise-modal-close-icon"></use>
+    <button type="button" class="franchise__btn" data-franchise-close>
+      <svg class="franchise__icon icon-close-btn" width="16" height="16">
+        <use href="./images/icons.svg#icon-modal-close"></use>
       </svg>
     </button>
     <h3 class="franchise__title">
@@ -18,39 +16,38 @@
       information. We appreciate your patience.
     </p>
     <form class="franchise__form">
-        <input
-          type="text"
-          name="username"
-          class="franchise__input"
-          placeholder="Name"
-          required
-        />
-      
-        <input
-          type="tel"
-          name="tel"
-          class="franchise__input"
-          placeholder="Phone"
-          required
-        />
-      
-        <input
-          type="email"
-          name="mail"
-          class="franchise__input"
-          placeholder="Email"
-          required
-        />
-       
-        <textarea
-          name="feedback"
-          class="franchise__feedback"
-          placeholder="Comment"
-          style="overflow:hidden"
-        ></textarea>
-      
+      <input
+        type="text"
+        name="username"
+        class="franchise__input"
+        placeholder="Name"
+        required
+      />
 
-      <button type="submit" class="franchise__send-btn btn">Submit</button>
+      <input
+        type="tel"
+        name="tel"
+        class="franchise__input"
+        placeholder="Phone"
+        required
+      />
+
+      <input
+        type="email"
+        name="mail"
+        class="franchise__input"
+        placeholder="Email"
+        required
+      />
+
+      <textarea
+        name="feedback"
+        class="franchise__feedback"
+        placeholder="Comment"
+        style="overflow: hidden"
+      ></textarea>
+
+      <button type="submit" class="franchise__send-btn">Submit</button>
     </form>
   </div>
 </div>

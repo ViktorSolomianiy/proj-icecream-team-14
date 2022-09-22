@@ -25,9 +25,6 @@
   @include desktop {
     width: 563px;
     margin: 0 auto;
-
-    // width: 463px;
-    // margin-left: 100px;
   }
 }
 
@@ -169,7 +166,7 @@
   }
 }
 
-.btn {
+.about-btn {
   font-family: 'Montserrat';
   @include font(600, 14, 1.28, 0.02);
   margin-left: 32px;
@@ -179,7 +176,7 @@
   color: #131313;
 
   &:focus {
-    color:#ffffff;
+    color: #ffffff;
     fill: #ffffff;
   }
 }
