@@ -4,10 +4,14 @@
     top: 0;
     width: 100%;
     height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: 
+      opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), 
+      visibility 500ms;
+    transform: translate(-50%,-50%);
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), 
-    visibility 500ms;
-  
+    
     &.is-hidden {
       visibility: hidden;
       opacity: 0;
@@ -23,12 +27,9 @@
     position: absolute;
     min-width: 280px;
     min-height: 365px;
-    opacity: 1;
-    
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-
+   
     padding: 28px;
     background-color: #FCFCFC;
     border: 2px solid #F8D24E;
@@ -97,7 +98,7 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
-    @include largerThanMobile{
+    @include largerThanMobile {
         @include font(600, 14, 1.21, 0.03);
     }
   }
