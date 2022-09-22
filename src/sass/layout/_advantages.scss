@@ -144,7 +144,7 @@
   }
 }
 
-.about-title {
+.abaut-title {
   font-family: 'Seymour One';
   @include font(400, 30, 1.26, 0.04);
   margin-left: auto;
@@ -166,7 +166,7 @@
   }
 }
 
-.about-btn {
+.abaut-btn {
   font-family: 'Montserrat';
   @include font(600, 14, 1.28, 0.02);
   margin-left: 32px;
@@ -246,15 +246,15 @@
 }
 
 .cow::after {
-  content: url(/src/images/kow/cow.png);
+  content: url(/src/images/сow/cow.png);
 }
 
 .weight::after {
-  content: url(/src/images/kow/weight.png);
+  content: url(/src/images/сow/weight.png);
 }
 
 .icecrema:after {
-  content: url(/src/images/kow/icecrema.png);
+  content: url(/src/images/сow/icecrema.png);
 }
 
 .numbers {
