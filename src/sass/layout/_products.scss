@@ -281,6 +281,9 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
+  overflow: auto;
+  height: 100%;
+
   @include tablet {
     width: 568px;
 
